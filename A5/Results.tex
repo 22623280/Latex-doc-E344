@@ -267,15 +267,40 @@ From figure \ref{fig:measNMOS} it can be seen that the switching time of the NMO
 \newpage
 \section{Supply Voltage measurement}
 
- \begin{figure}[!htb]
+
+\begin{figure}[!htb]
 	\footnotesize
 	\centering
-	\begin{subfigure}[]{0.46\textwidth}
+	\begin{subfigure}[]{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./Figures/A6/A6supcurrent.png}
+		\caption{} \label{subfig:A6gensup}
+	\end{subfigure}
+	\begin{subfigure}[]{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./Figures/A6/A6supnoise.png}
+		\caption{ } \label{subfig:A6noiselt}
+	\end{subfigure}
+	\caption[{LTSPICE supply measurement simulation results}]{LTSPICE supply measurement simulation results   (a)  Supply before and after signal conditioning with current drawn from supply (b)Noise on supply input compared to converted supply voltage }
+	\label{fig:A6bat}
+\end{figure}
+
+From figure \ref{subfig:A6gensup} the converted supply signal is the voltage measured by the ADC. As the supply voltage increases the converted supply signal varies between zero and 4.54V. It does not vary between 0 and exactly 5V because of the additional precaution of 24V as the maximum input voltage where the max input voltage here is 22V. The noise that can be seen in figure  \ref{subfig:A6noiselt} is significantly reduced in the converted signal. The speed of the signal is not severely slowed as can be seen in figure  \ref{subfig:A6gensup} where the converted supply voltage nearly changes 5V in less than 100ms. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Battery Voltage measurement}
+
+
+
+\begin{figure}[!htb]
+	\footnotesize
+	\centering
+	\begin{subfigure}[]{0.48\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{./Figures/A6/A6batvolt.png}
 		\caption{} \label{subfig:voltbatA6}
 	\end{subfigure}
-	\begin{subfigure}[]{0.46\textwidth}
+	\begin{subfigure}[]{0.48\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{./Figures/A6/A6batcurrent.png}
 		\caption{ } \label{subfig:currbatA6}
@@ -284,12 +309,7 @@ From figure \ref{fig:measNMOS} it can be seen that the switching time of the NMO
 	\label{fig:A6bat}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\section{Battery Voltage measurement}
-
-
-
+From the results seen in figure \ref{subfig:voltbatA6} the ADC battery voltage varies in an inverted manner compared to the battery voltage as designed. The ADC battery voltage should vary between 0.5V and 4.5V but it does not. When the battery voltage is at its least of 5.7V (design safety factor minimum) the battery voltage is 4.39V which is 0.101V less than expected. This is because the resistors used in the LTSPICE model is using lab resistor values.The performance is still meeting requirements of greater than a 3V output swing.
 
 
 
