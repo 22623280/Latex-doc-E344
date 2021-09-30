@@ -143,18 +143,35 @@ From the values in table \ref{tab:PMOSmeas} it can be seen that when the NMOS ga
 From figure \ref{subfig:voltage} it can be seen that the op amp transitions at the correct of 6V and 6.2V respectively. From figure \ref{subfig:current} it can be seen that the current out of the 5V regulator is less than 10mA and that the op amp output corresponds to the discharging from the battery. 
 
 
-\begin{figure}[!htb]
-\centering
-\includegraphics[scale=0.048]{./Figures/meas2.png}
-\caption{Measured Oscilloscope results of under voltage circuit for 4 different stages of battery terminal voltages}
-\label{fig:Oscil}
-\end{figure}
+
+\begin{table}[!htb]
+	\centering
+	\footnotesize
+	\caption{Under voltage circuit measurements}
+	\begin{tabular}{lrrrr}
+		\toprule
+		& A2 Output& Battery terminal voltage \\
+		&  [V]&[V] \\
+		\midrule
+		Stage 1 & 6.52 &6.48    \\
+		Stage 2 &  5.98&0.14     \\
+		Stage 3 &  6.20&0.13     \\
+		Stage 4 &  6.40&6.33     \\
+		
+		\bottomrule
+	\end{tabular}
+	\label{tab:stagemeas}
+\end{table}
+
 \begin{flushleft}
 \textbf{Stage 1}: Battery voltage is above 6V threshold and A2 output allows discharge.\newline
 \textbf{Stage 2}: Battery voltage is below above 6V threshold and A2 output is 0V stopping battery discharge.\newline
 \textbf{Stage 3}: Battery voltage is above 6V but not 6.2V (after under-voltage circuit disconnected battery) therefore A2 output is 0V, stopping battery discharge.\newline
 \textbf{Stage 4}: Battery voltage is above 6.2V threshold after under-voltage circuit disconnected battery, therefore A2 is approximately equal to the battery voltage and is discharging.\newline
 \end{flushleft}
+
+
+
 
 
 
@@ -309,7 +326,7 @@ From figure \ref{subfig:A6gensup} the converted supply signal is the voltage mea
 	\label{fig:A6bat}
 \end{figure}
 
-From the results seen in figure \ref{subfig:voltbatA6} the ADC battery voltage varies in an inverted manner compared to the battery voltage as designed. The ADC battery voltage should vary between 0.5V and 4.5V but it does not. When the battery voltage is at its least of 5.7V (design safety factor minimum) the battery voltage is 4.39V which is 0.101V less than expected. This is because the resistors used in the LTSPICE model is using lab resistor values.The performance is still meeting requirements of greater than a 3V output swing.
+From the results seen in figure \ref{subfig:voltbatA6} the ADC battery voltage varies in an inverted manner compared to the battery voltage as designed. The ADC battery voltage should vary between 0.5V and 4.5V but it does not. When the battery voltage is at its least of 5.7V (design safety factor minimum) the battery voltage is 4.39V which is 0.101V less than expected. This is because the resistors used in the LTSPICE model is using lab resistor values.The performance is still meeting requirements of greater than a 3V output swing. The current drawn from the battery directly as well as indirectly through the 5V regulator sum to less than $300\mu A$ .
 
 
 
