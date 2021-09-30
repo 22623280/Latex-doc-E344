@@ -19,23 +19,24 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Fuse Characteristics}}{14}{figure.caption.20}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Load circuitry with low side switch implemented\relax }}{15}{figure.caption.21}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Differential amplifier op amp setup}}{16}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Battery measurement circuit\relax }}{17}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces LTSPICE switch turning on results}}{17}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces LTSPICE switch turning off results}}{17}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces LTSPICE switch off and supply off results}}{18}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces LTSpice simulation results for high side switch on the supply side\relax }}{19}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces LT spice Results}}{20}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Measured Oscilloscope results of under voltage circuit for 4 different stages of battery terminal voltages\relax }}{20}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Current Sense LTSpice Results}}{21}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Oscilloscope measurements with various switch states\relax }}{21}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Fuse Characteristics}}{23}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Oscilloscope Measurements of NMOS while switching\relax }}{23}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces LTSPICE switch turning on results}}{18}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces LTSPICE switch turning off results}}{18}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces LTSPICE switch off and supply off results}}{19}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces LTSpice simulation results for high side switch on the supply side\relax }}{20}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces LT spice Results}}{21}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Measured Oscilloscope results of under voltage circuit for 4 different stages of battery terminal voltages\relax }}{21}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Current Sense LTSpice Results}}{22}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Oscilloscope measurements with various switch states\relax }}{22}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Fuse Characteristics}}{24}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Oscilloscope Measurements of NMOS while switching\relax }}{24}{figure.caption.37}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Rise Time for different switches }}{25}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Circuit with barcode and Student Card\relax }}{26}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Rise Time for different switches }}{26}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Circuit with barcode and Student Card\relax }}{27}{figure.caption.41}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces tsc213 data sheet information\relax }}{31}{figure.caption.43}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Application Circuit For LM317\cite {STM}\relax }}{31}{figure.caption.44}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces tsc213 data sheet information\relax }}{32}{figure.caption.44}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Application Circuit For LM317\cite {STM}\relax }}{32}{figure.caption.45}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Non inverting Schmidt trigger\cite {Schmidt}\relax }}{32}{figure.caption.46}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Non inverting Schmidt trigger\cite {Schmidt}\relax }}{33}{figure.caption.47}%

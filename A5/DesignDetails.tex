@@ -304,18 +304,15 @@ Because 100mA is the maximum current a 2n7000 NMOS chip was deemed enough to be 
 
 \newpage
 \section{Supply voltage measurement}
+The Supply voltage of supply will vary from voltages of zero volt to just below 23V. To measure the supply measurement needs to converted to a voltage between 0 and 5V in order for the arduino beetle to successfully read a voltage without breaking. There should be a boundary between 5V and the maximum converted voltage. To implement this a maximum voltage of 24V is designed for instead of 23V. One of the two possible supplies, the AC wall plug will introduce noise into the circuit. This noise will likely be 50Hz which will be designed for adequately using a RC filter.
+
+
 
 
 \section{Battery voltage measurement}
-I this design the battery voltage will be go through a signal conditioning process to make it readable from the perspective of an ADC. The ADC we are going to use requires a voltage between 0 and 5V. The battery voltage will vary between 6V and 7.2V if the complete system is working as designed. For the purpose of the design an additional 0.3V will be extended on to either side of the boundaries to give a margin for error (5.7V to 7.5V).  Using Op Amps the battery voltage will be designed to vary linearly with an output swing of four volts. This four volts will be equally spaced from the 0 and 5V boundaries of the ADC (0.5V to 4.5V), the output swing is less than 5V in order to prevent possible damage to the ADC in the case that the reconditioned battery voltage exceeds 5V. 
+In this design the battery voltage will be go through a signal conditioning process to make it readable from the perspective of an ADC. The ADC we are going to use requires a voltage between 0 and 5V. The battery voltage will vary between 6V and 7.2V if the complete system is working as designed. For the purpose of the design an additional 0.3V will be extended on to either side of the boundaries to give a margin for error (5.7V to 7.5V).  Using Op Amps the battery voltage will be designed to vary linearly with an output swing of four volts. This four volts will be equally spaced from the 0 and 5V boundaries of the ADC (0.5V to 4.5V), the output swing is less than 5V in order to prevent possible damage to the ADC in the case that the reconditioned battery voltage exceeds 5V. 
 
-To achieve the differential amplifier setup from figure \ref{fig:difamp} is used. In this design $R_1$=$R_2$ and $R_3$=$R_4$ \cite{difAmp}. The corresponding equation is as seen in equation \ref{eq:diff}.  $V_2$ will be used as the reference voltage and $V_1$ will be our input from the battery. With this configuration the output will be inverted, but this is not a problem because it can be calibrated accordingly in the arduino software.
-
-\begin{equation}
-	V_{out}=\frac{R_3}{R_1}\times(V_2-V_1) 
-	\label{eq:diff}
-\end{equation}
-
+Another consideration that needs to be made is that our differential voltage and common mode voltage requirement must be met ($|V_{SS}-V_{DD}|$ and  $V_{SS}$ – 0.3 — $V_{DD}$ + 0.3) \cite{MCP}. To fit this requirement the input voltage is divided with resistors to be  four volts at the maximum designed voltage of 7.5V  as can be see in figure \ref{fig:batcirc}, this will result in a voltage of 3.04V when the battery voltage is 5.7V.
 
 \begin{figure}[!htb]
 	\centering
@@ -323,5 +320,35 @@ To achieve the differential amplifier setup from figure \ref{fig:difamp} is used
 	\caption[Differential amplifier op amp setup]{Differential amplifier op amp setup\cite{difAmp} }
 	\label{fig:difamp}
 \end{figure}
+
+To achieve the differential amplifier setup from figure \ref{fig:difamp} is used. In this design $R_1$=$R_2$ and $R_3$=$R_4$ \cite{difAmp}. The corresponding equation is as seen in equation \ref{eq:diff}.  $V_2$ will be used as the reference voltage and $V_1$ will be our input from the battery. With this configuration the output will be inverted, but this is not a problem because it can be calibrated accordingly in the arduino software.
+
+\begin{equation}
+	V_{out}=\frac{R_3}{R_1}\times(V_{2(ref)}-V_{1(bat)}) 
+	\label{eq:diff}
+\end{equation}
+
+Using eq.\ref{eq:diff} $V_{2(ref)}$ is solved for simultaneously by setting the equations for the scenario when the battery voltage is 7.5V and 5.7V.
+
+\begin{center}
+	 $4.5V=\frac{R_3}{R_1}\times(V_{2(ref)}-3.04V) \ \ \ \ \ \ \ \ 0.5V=\frac{R_3}{R_1}\times(V_{2(ref)}-4V) $\newline 
+	
+	$\frac{4.5V}{(V_{2(ref)}-3.04V)}=\frac{0.5V}{(V_{2(ref)}-4V)}  \ \ \ \ \ \ \ \ V_{2(ref)}=4.12V \ \ \ \ \ \ \frac{R_3}{R_1}=4.167$\newline
+\end{center}
+
+
+$R_3$ is then chosen to be 112k\textohm  (100k\textohm +12k\textohm in lab resistors). $R_1$ is the calculated to be 26.9k\textohm  (27k\textohm   in lab resistors). Both $V_1$ and $V_2$ need to be divided to a lower voltages 4.12V and four volts, the relevant resistors for the voltage division can be seen in figure \ref{fig:batcirc}.  $V_1$ requires a buffer in between the divided battery voltage and the differential op amp to prevent the negative feedback from interfering with the input voltage. $V_2$ also requires a buffer because otherwise $R_2$ and $R_4$ will the change the effective voltage division and 4.12V will not be achieved. 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.45\linewidth]{Figures/Batterysig.jpg}
+	\caption{Battery measurement circuit}
+	\label{fig:batcirc}
+\end{figure}
+
+
+
+
+
 
 
