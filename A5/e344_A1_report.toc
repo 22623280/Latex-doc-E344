@@ -11,6 +11,7 @@
 \contentsline {section}{\numberline {2.1}Charging circuit overview}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Under Voltage and Over Current circuit overview}{4}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Current sense circuit overview}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Battery and Supply voltage measurement}{5}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Design Details}{6}{chapter.3}%
 \contentsline {section}{\numberline {3.1}LM317 Regulation}{6}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Voltage regulation}{6}{subsection.3.1.1}%
@@ -24,14 +25,16 @@
 \contentsline {subsection}{\numberline {3.4.3}Voltage monitoring with hysteresis design}{11}{subsection.3.4.3}%
 \contentsline {section}{\numberline {3.5}Current sense}{13}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Low Side Switch and Load}{15}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Results}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Voltage regulation}{16}{section.4.1}%
-\contentsline {section}{\numberline {4.2}High side switch on supply side}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Undervoltage protection}{19}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Current sense}{20}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Low-side switch}{22}{section.4.5}%
-\contentsline {section}{\numberline {4.6}System Results}{23}{section.4.6}%
-\contentsline {chapter}{Bibliography}{25}{chapter*.40}%
-\contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{28}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data sheet info}{29}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Additional Info}{30}{appendix.C}%
+\contentsline {section}{\numberline {3.7}Supply voltage measurement}{16}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Battery voltage measurement}{16}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Subsystem results}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Voltage regulation}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}High side switch on supply side}{19}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Undervoltage protection}{20}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Current sense}{21}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Low-side switch}{23}{section.4.5}%
+\contentsline {chapter}{\numberline {5}System results}{24}{chapter.5}%
+\contentsline {chapter}{Bibliography}{27}{chapter*.41}%
+\contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{30}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data sheet info}{31}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Additional Info}{32}{appendix.C}%

@@ -301,3 +301,27 @@ Because 100mA is the maximum current a 2n7000 NMOS chip was deemed enough to be 
     \caption{Load circuitry with low side switch implemented}
     \label{fig:loadcirc}
 \end{figure}
+
+\newpage
+\section{Supply voltage measurement}
+
+
+\section{Battery voltage measurement}
+I this design the battery voltage will be go through a signal conditioning process to make it readable from the perspective of an ADC. The ADC we are going to use requires a voltage between 0 and 5V. The battery voltage will vary between 6V and 7.2V if the complete system is working as designed. For the purpose of the design an additional 0.3V will be extended on to either side of the boundaries to give a margin for error (5.7V to 7.5V).  Using Op Amps the battery voltage will be designed to vary linearly with an output swing of four volts. This four volts will be equally spaced from the 0 and 5V boundaries of the ADC (0.5V to 4.5V), the output swing is less than 5V in order to prevent possible damage to the ADC in the case that the reconditioned battery voltage exceeds 5V. 
+
+To achieve the differential amplifier setup from figure \ref{fig:difamp} is used. In this design $R_1$=$R_2$ and $R_3$=$R_4$ \cite{difAmp}. The corresponding equation is as seen in equation \ref{eq:diff}.  $V_2$ will be used as the reference voltage and $V_1$ will be our input from the battery. With this configuration the output will be inverted, but this is not a problem because it can be calibrated accordingly in the arduino software.
+
+\begin{equation}
+	V_{out}=\frac{R_3}{R_1}\times(V_2-V_1) 
+	\label{eq:diff}
+\end{equation}
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.27\linewidth]{Figures/difamp.jpg}
+	\caption[Differential amplifier op amp setup]{Differential amplifier op amp setup\cite{difAmp} }
+	\label{fig:difamp}
+\end{figure}
+
+

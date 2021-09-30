@@ -201,4 +201,10 @@ edX, ``Maximum power point tracking,'' 2019. [Online]. Available:
   \url{https://www.youtube.com/watch?v=oQrWR6Vbb6M&list=LL&index=2}
 \BIBentrySTDinterwordspacing
 
+\bibitem{difAmp}
+\BIBentryALTinterwordspacing
+{Electronics Tutorials}, ``The differential amplifier,'' 2018. [Online].
+  Available: \url{https://www.electronics-tutorials.ws/opamp/opamp_5.html}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

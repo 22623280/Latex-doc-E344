@@ -11,6 +11,8 @@ Reallocating 'name_of_file' (item size: 1) to 18 items.
 A level-1 auxiliary file: DesignDetails.aux
 Reallocating 'name_of_file' (item size: 1) to 12 items.
 A level-1 auxiliary file: Results.aux
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+A level-1 auxiliary file: SystemResults.aux
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 A level-1 auxiliary file: App-A.aux
@@ -27,44 +29,44 @@ Database file #1: References.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 28 entries,
+You've used 29 entries,
             4087 wiz_defined-function locations,
-            968 strings with 11307 characters,
-and the built_in function-call counts, 10298 in all, are:
-= -- 811
-> -- 112
+            974 strings with 11440 characters,
+and the built_in function-call counts, 10662 in all, are:
+= -- 840
+> -- 116
 < -- 0
-+ -- 56
-- -- 28
-* -- 381
-:= -- 1988
-add.period$ -- 56
-call.type$ -- 28
-change.case$ -- 28
++ -- 58
+- -- 29
+* -- 394
+:= -- 2058
+add.period$ -- 58
+call.type$ -- 29
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 840
-empty$ -- 1009
-format.name$ -- 28
-if$ -- 2217
+cite$ -- 29
+duplicate$ -- 870
+empty$ -- 1045
+format.name$ -- 29
+if$ -- 2296
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 196
-newline$ -- 163
-num.names$ -- 28
-pop$ -- 616
+int.to.str$ -- 29
+missing$ -- 203
+newline$ -- 168
+num.names$ -- 29
+pop$ -- 638
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 785
+skip$ -- 813
 stack$ -- 0
-substring$ -- 28
-swap$ -- 448
+substring$ -- 29
+swap$ -- 464
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 28
+type$ -- 29
 warning$ -- 0
-while$ -- 28
-width$ -- 30
-write$ -- 302
+while$ -- 29
+width$ -- 31
+write$ -- 312

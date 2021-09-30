@@ -26,9 +26,18 @@ The circuit structure can be seen in figure \ref{fig:A3block} as the yellow high
 The current sense circuit structure can be seen in figure \ref{fig:finalblock} as the purple highlighted blocks. The current sense circuit connects the two previous system block diagrams to make up the final block diagram.  The current sense circuitry was added at its position after the load so that the current it will measure is the current discharging from the battery or charging into the battery. In order to operate the current sense amplifier will require a 5V from the 5V regulator.  The current sense amplifier will be used to produce voltage between 0V and 5V that will correspond proportionally to the current in a designed range of 3V. The current sense amplifier will amplify very small voltages across the current sense resistor. The load can also be connected and disconnected with the help of the designed low side switch. The output of the current sense amplifier will be prone to noise from the 12V wall plug as well as the 5V regulator. In order to fix this a output filter will be required at the output of the current sense amplifier. The directions of the arrows in the block diagrams show the direction that current flow will be enforced. This means schottky diodes will be used at the solar panel the 12V wall plug as well as the output of the charging circuit. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
 \begin{figure}[!htb]
 \centering
 \includegraphics[scale=0.45]{./Figures/A5}
 \caption{Complete System Block Diagram}
 \label{fig:finalblock}
 \end{figure}
+
+
+\section{Battery and Supply voltage measurement}
+
+
+
+
