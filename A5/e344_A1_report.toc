@@ -27,14 +27,16 @@
 \contentsline {section}{\numberline {3.6}Low Side Switch and Load}{15}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Supply voltage measurement}{16}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Battery voltage measurement}{16}{section.3.8}%
-\contentsline {chapter}{\numberline {4}Subsystem results}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Voltage regulation}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}High side switch on supply side}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Undervoltage protection}{21}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Current sense}{22}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Low-side switch}{24}{section.4.5}%
-\contentsline {chapter}{\numberline {5}System results}{25}{chapter.5}%
-\contentsline {chapter}{Bibliography}{28}{chapter*.42}%
-\contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{31}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data sheet info}{32}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Additional Info}{33}{appendix.C}%
+\contentsline {chapter}{\numberline {4}Subsystem results}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Voltage regulation}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}High side switch on supply side}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Undervoltage protection}{22}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Current sense}{23}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Low-side switch}{25}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Supply Voltage measurement}{26}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Battery Voltage measurement}{27}{section.4.7}%
+\contentsline {chapter}{\numberline {5}System results}{28}{chapter.5}%
+\contentsline {chapter}{Bibliography}{31}{chapter*.44}%
+\contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{34}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data sheet info}{35}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Additional Info}{36}{appendix.C}%

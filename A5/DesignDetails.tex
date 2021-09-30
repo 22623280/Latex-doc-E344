@@ -304,9 +304,28 @@ Because 100mA is the maximum current a 2n7000 NMOS chip was deemed enough to be 
 
 \newpage
 \section{Supply voltage measurement}
-The Supply voltage of supply will vary from voltages of zero volt to just below 23V. To measure the supply measurement needs to converted to a voltage between 0 and 5V in order for the arduino beetle to successfully read a voltage without breaking. There should be a boundary between 5V and the maximum converted voltage. To implement this a maximum voltage of 24V is designed for instead of 23V. One of the two possible supplies, the AC wall plug will introduce noise into the circuit. This noise will likely be 50Hz which will be designed for adequately using a RC filter.
+The Supply voltage of supply will vary from voltages of zero volt to just below 23V. To measure the supply measurement needs to converted to a voltage between zero and five volts in order for the arduino beetle to successfully read a voltage without breaking. There should be a boundary between 5V and the maximum converted voltage. To implement this a maximum voltage of 24V is designed for instead of 23V. One of the two possible supplies, the AC wall plug will introduce noise into the circuit. This noise will likely be 50Hz which will be designed for adequately using a low pass RC filter.
 
 
+\begin{center}
+	$\frac{R_{10}}{R_{10}+R_9}\times24V=5V$
+\end{center}
+If $R_9$ is chosen to be 100k\textohm \ $R_{10}$ will be 26.3k\textohm.
+
+\begin{equation}
+f_c=\frac{1}{2\times pi\times R\times C}
+\label{eq:freq}
+\end{equation}
+To prevent the noise of the ac wall plug from interfering with the measurement the low pass cut off filter is designed to cut off 10Hz before 50Hz to ensure a cleaner signal. The capacitor is chosen to be 100nF. Cutting off at a lower frequency would get rid of more noise however the rise time is dependant on the cut off frequency, $T_r \approx \frac{0.35}{f_c}$. For this reason the cut off frequency  is not designed too low.  As an example the error that a 100mV offset on the input to the ADC will have is calculated as $\frac{100mV}{5V}\times 24=0.48V$
+
+Using eq.\ref{eq:freq} with a chosen capacitor of 100nF the required resistance for a 40Hz cut off is found to be 39.78k\textohm.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.26\linewidth]{Figures/A6/Supsig.jpg}
+	\caption{Supply measurement circuit}
+	\label{fig:supcirc}
+\end{figure}
 
 
 \section{Battery voltage measurement}
@@ -316,7 +335,7 @@ Another consideration that needs to be made is that our differential voltage and
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.27\linewidth]{Figures/difamp.jpg}
+	\includegraphics[width=0.27\linewidth]{Figures/A6/difamp.jpg}
 	\caption[Differential amplifier op amp setup]{Differential amplifier op amp setup\cite{difAmp} }
 	\label{fig:difamp}
 \end{figure}
@@ -341,7 +360,7 @@ $R_3$ is then chosen to be 112k\textohm  (100k\textohm +12k\textohm in lab resis
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.45\linewidth]{Figures/Batterysig.jpg}
+	\includegraphics[width=0.45\linewidth]{Figures/A6/Batterysig.jpg}
 	\caption{Battery measurement circuit}
 	\label{fig:batcirc}
 \end{figure}

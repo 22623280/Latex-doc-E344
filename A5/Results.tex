@@ -248,7 +248,7 @@ The LT spice simulations(figure \ref{subfig:sim}) show the output working correc
   		\includegraphics[width=1\linewidth]{./Figures/circNMOS.png}
 		   \caption{ } \label{subfig:circnmos}
      \end{subfigure}
-   \caption[{Fuse Characteristics}]{NMOS final Results   (a)  LT Spice simulation (b)Lowside circuit used }
+   \caption[{NMOS final results}]{NMOS final Results   (a)  LT Spice simulation (b)Lowside circuit used }
     \label{fig:NMOScirc}
  \end{figure}
  The above LTspice simulation in figure \ref{subfig:nmosfig} was setup to have a load that had 100mA flowing through it. It shows that the NMOS was able to switch this amount of current with ease using a 5V control signal. Using this circuit practically the low side switching in figure \ref{fig:meas} was achieved, indicating that it was able to enable and disable discharge through the load.
@@ -264,3 +264,46 @@ The LT spice simulations(figure \ref{subfig:sim}) show the output working correc
 From figure \ref{fig:measNMOS} it can be seen that the switching time of the NMOS is virtually instantaneous and also simply that the NMOS switching capability is working correctly. The NMOS source is connected to ground, therefore when the control signal goes high the NMOS "connects" its drain to its source which is ground.
 
 %%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Supply Voltage measurement}
+
+ \begin{figure}[!htb]
+	\footnotesize
+	\centering
+	\begin{subfigure}[]{0.46\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./Figures/A6/A6batvolt.png}
+		\caption{} \label{subfig:voltbatA6}
+	\end{subfigure}
+	\begin{subfigure}[]{0.46\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./Figures/A6/A6batcurrent.png}
+		\caption{ } \label{subfig:currbatA6}
+	\end{subfigure}
+	\caption[{LTSPICE battery measurement simulation results}]{LTSPICE battery measurement simulation results   (a)  Battery before and after signal conditioning (b)Battery Current and 5V regulator current }
+	\label{fig:A6bat}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Battery Voltage measurement}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
