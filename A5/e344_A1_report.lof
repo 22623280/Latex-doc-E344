@@ -32,13 +32,15 @@
 \contentsline {figure}{\numberline {4.8}{\ignorespaces NMOS final results}}{25}{figure.caption.37}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Oscilloscope Measurements of NMOS while switching\relax }}{25}{figure.caption.38}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces LTSPICE supply measurement simulation results}}{26}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces LTSPICE battery measurement simulation results}}{27}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Oscilloscope Measurements of response time and noise of Supply measuring}}{26}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces LTSPICE battery measurement simulation results}}{27}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Oscilloscope data of rise time of battery voltage measuring circuit\relax }}{27}{figure.caption.42}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Rise Time for different switches }}{29}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Circuit with barcode and Student Card\relax }}{30}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Rise Time for different switches }}{29}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Circuit with barcode and Student Card\relax }}{30}{figure.caption.47}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces tsc213 data sheet information\relax }}{35}{figure.caption.47}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Application Circuit For LM317\cite {STM}\relax }}{35}{figure.caption.48}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces tsc213 data sheet information\relax }}{35}{figure.caption.50}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Application Circuit For LM317\cite {STM}\relax }}{35}{figure.caption.51}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Non inverting Schmidt trigger\cite {Schmidt}\relax }}{36}{figure.caption.50}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Non inverting Schmidt trigger\cite {Schmidt}\relax }}{36}{figure.caption.53}%

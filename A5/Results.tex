@@ -303,6 +303,28 @@ From figure \ref{fig:measNMOS} it can be seen that the switching time of the NMO
 \end{figure}
 
 From figure \ref{subfig:A6gensup} the converted supply signal is the voltage measured by the ADC. As the supply voltage increases the converted supply signal varies between zero and 4.54V. It does not vary between 0 and exactly 5V because of the additional precaution of 24V as the maximum input voltage where the max input voltage here is 22V. The noise that can be seen in figure  \ref{subfig:A6noiselt} is significantly reduced in the converted signal. The speed of the signal is not severely slowed as can be seen in figure  \ref{subfig:A6gensup} where the converted supply voltage nearly changes 5V in less than 100ms. 
+
+
+
+
+\begin{figure}[!htb]
+	\footnotesize
+	\centering
+	\begin{subfigure}[]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./Figures/A6/noisesup.jpg}
+		\caption{} \label{subfig:noiseSup}
+	\end{subfigure}
+	\begin{subfigure}[]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./Figures/A6/risesup.jpg}
+		\caption{ } \label{subfig:resSup}
+	\end{subfigure}
+	\caption[{Oscilloscope Measurements of response time and noise of Supply measuring}]{Oscilloscope Measurements of response time and noise of Supply measuring  (a) Input vs Output battery signal noise (b) Response time of converted battery signal }
+	\label{fig:A6suposc}
+\end{figure}
+ From figure \ref{subfig:A6gensup} it can be seen that the rise time for a step input of one volt is only just less than 100ms, and therefore meets the requirements. The noise in figure \ref{subfig:A6noiselt} can be seen to have significantly decreased from 76mV to 8mV giving a significantly cleaner output signal.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Battery Voltage measurement}
@@ -312,12 +334,12 @@ From figure \ref{subfig:A6gensup} the converted supply signal is the voltage mea
 \begin{figure}[!htb]
 	\footnotesize
 	\centering
-	\begin{subfigure}[]{0.48\textwidth}
+	\begin{subfigure}[]{0.386\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{./Figures/A6/A6batvolt.png}
 		\caption{} \label{subfig:voltbatA6}
 	\end{subfigure}
-	\begin{subfigure}[]{0.48\textwidth}
+	\begin{subfigure}[]{0.46\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{./Figures/A6/A6batcurrent.png}
 		\caption{ } \label{subfig:currbatA6}
@@ -326,16 +348,39 @@ From figure \ref{subfig:A6gensup} the converted supply signal is the voltage mea
 	\label{fig:A6bat}
 \end{figure}
 
-From the results seen in figure \ref{subfig:voltbatA6} the ADC battery voltage varies in an inverted manner compared to the battery voltage as designed. The ADC battery voltage should vary between 0.5V and 4.5V but it does not. When the battery voltage is at its least of 5.7V (design safety factor minimum) the battery voltage is 4.39V which is 0.101V less than expected. This is because the resistors used in the LTSPICE model is using lab resistor values.The performance is still meeting requirements of greater than a 3V output swing. The current drawn from the battery directly as well as indirectly through the 5V regulator sum to less than $300\mu A$ .
+From the results seen in figure \ref{subfig:voltbatA6} the ADC battery voltage increases as the battery voltage increases. The ADC battery voltage should vary between 0.5V and 4.8V. The simulation is only 0.01V from the expected values, this is likely a result of resistor values that are chosen. The current drawn from the battery directly as well as indirectly through the 5V regulator sum to less than $300\mu A$ indicating minimal current usage.
 
 
 
 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.45]{./Figures/A6/batmeas.png}
+	\caption{Oscilloscope data of rise time of battery voltage measuring circuit}
+	\label{fig:batrise}
+\end{figure}
 
 
 
+\begin{table}[!htb]
+	\centering
+	\footnotesize
+	\caption{Battery Measuring circuit measurements}
+	\begin{tabular}{lrrrr}
+		\toprule
+		&Battery voltage& ADC Voltage&Expected ADC voltage& error \\
+		&  [V]&[V]&[V]&[\%] \\
+		\midrule
+		&6&1.29&1.23  &4.88   \\
+		&6.6&2.80&2.76  &1.45   \\
+		&7.2&4.04&4.10   &1.46  \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:batmeas}
+\end{table}
 
 
+From figure \ref{fig:batrise} it can be seen that the rise time of channel 1 (ADC voltage) is practically instant and that the designed range is approximately achieved. Table \ref{tab:batmeas} represents the ADC voltage at the specific battery voltages and the error between the ADC voltage and the theoretical ADC voltage.
 
 
 
