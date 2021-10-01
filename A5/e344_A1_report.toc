@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {3.5}Current sense}{13}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Low Side Switch and Load}{15}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Supply voltage measurement}{16}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Battery voltage measurement}{16}{section.3.8}%
+\contentsline {section}{\numberline {3.8}Battery voltage measurement}{17}{section.3.8}%
 \contentsline {chapter}{\numberline {4}Subsystem results}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Voltage regulation}{19}{section.4.1}%
 \contentsline {section}{\numberline {4.2}High side switch on supply side}{21}{section.4.2}%

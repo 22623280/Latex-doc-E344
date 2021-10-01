@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.30)  30 SEP 2021 21:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.30)  1 OCT 2021 19:58
 entering extended mode
 **./e344_A1_report.tex
 (e344_A1_report.tex
@@ -1056,22 +1056,22 @@ File: Figures/loadCircuit.png Graphic file (type png)
 Package pdftex.def Info: Figures/loadCircuit.png  used on input line 300.
 (pdftex.def)             Requested size: 188.9235pt x 155.01135pt.
  [15 <./Figures/loadCircuit.png>]
-<Figures/A6/Supsig.jpg, id=714, 317.68687pt x 288.3272pt>
+<Figures/A6/Supsig.jpg, id=714, 374.14781pt x 274.02374pt>
 File: Figures/A6/Supsig.jpg Graphic file (type jpg)
 <use Figures/A6/Supsig.jpg>
 Package pdftex.def Info: Figures/A6/Supsig.jpg  used on input line 325.
-(pdftex.def)             Requested size: 122.79955pt x 111.45285pt.
+(pdftex.def)             Requested size: 122.79955pt x 89.9389pt.
  [16 <./Figures/A6/Supsig.jpg>]
 <Figures/A6/difamp.jpg, id=722, 470.50781pt x 308.65312pt>
 File: Figures/A6/difamp.jpg Graphic file (type jpg)
 <use Figures/A6/difamp.jpg>
-Package pdftex.def Info: Figures/A6/difamp.jpg  used on input line 338.
+Package pdftex.def Info: Figures/A6/difamp.jpg  used on input line 340.
 (pdftex.def)             Requested size: 127.52731pt x 83.6577pt.
-<Figures/A6/Batterysig.jpg, id=730, 499.8675pt x 281.55188pt>
+<Figures/A6/Batterysig.jpg, id=730, 785.93625pt x 459.96844pt>
 File: Figures/A6/Batterysig.jpg Graphic file (type jpg)
 <use Figures/A6/Batterysig.jpg>
-Package pdftex.def Info: Figures/A6/Batterysig.jpg  used on input line 363.
-(pdftex.def)             Requested size: 212.54073pt x 119.71165pt.
+Package pdftex.def Info: Figures/A6/Batterysig.jpg  used on input line 365.
+(pdftex.def)             Requested size: 212.54073pt x 124.38965pt.
 ) [17 <./Figures/A6/difamp.jpg>]
 [18 <./Figures/A6/Batterysig.jpg>]
 \openout2 = `Results.aux'.
@@ -1170,29 +1170,29 @@ File: ./Figures/NMOSmeas.png Graphic file (type png)
 Package pdftex.def Info: ./Figures/NMOSmeas.png  used on input line 276.
 (pdftex.def)             Requested size: 260.17401pt x 173.44933pt.
  [25 <./Figures/NMOS.png> <./Figures/circNMOS.png> <./Figures/NMOSmeas.png>]
-<./Figures/A6/A6supcurrent.png, id=823, 414.31358pt x 277.62004pt>
+<./Figures/A6/A6supcurrent.png, id=823, 433.62pt x 289.08pt>
 File: ./Figures/A6/A6supcurrent.png Graphic file (type png)
 <use ./Figures/A6/A6supcurrent.png>
 Package pdftex.def Info: ./Figures/A6/A6supcurrent.png  used on input line 293.
 
-(pdftex.def)             Requested size: 226.70963pt x 151.9078pt.
-<./Figures/A6/A6supnoise.png, id=824, 404.91849pt x 262.54659pt>
+(pdftex.def)             Requested size: 226.70963pt x 151.1429pt.
+<./Figures/A6/A6supnoise.png, id=824, 433.62pt x 289.08pt>
 File: ./Figures/A6/A6supnoise.png Graphic file (type png)
 <use ./Figures/A6/A6supnoise.png>
 Package pdftex.def Info: ./Figures/A6/A6supnoise.png  used on input line 298.
-(pdftex.def)             Requested size: 226.70963pt x 147.00104pt.
+(pdftex.def)             Requested size: 226.70963pt x 151.1429pt.
  [26 <./Figures/A6/A6supcurrent.png> <./Figures/A6/A6supnoise.png>]
-<./Figures/A6/A6batvolt.png, id=834, 371.77753pt x 275.3487pt>
+<./Figures/A6/A6batvolt.png, id=834, 433.62pt x 289.08pt>
 File: ./Figures/A6/A6batvolt.png Graphic file (type png)
 <use ./Figures/A6/A6batvolt.png>
 Package pdftex.def Info: ./Figures/A6/A6batvolt.png  used on input line 317.
-(pdftex.def)             Requested size: 226.70963pt x 167.91203pt.
-<./Figures/A6/A6batcurrent.png, id=835, 375.39102pt x 254.49364pt>
+(pdftex.def)             Requested size: 226.70963pt x 151.1429pt.
+<./Figures/A6/A6batcurrent.png, id=835, 433.62pt x 289.08pt>
 File: ./Figures/A6/A6batcurrent.png Graphic file (type png)
 <use ./Figures/A6/A6batcurrent.png>
 Package pdftex.def Info: ./Figures/A6/A6batcurrent.png  used on input line 322.
 
-(pdftex.def)             Requested size: 226.70963pt x 153.69923pt.
+(pdftex.def)             Requested size: 226.70963pt x 151.1429pt.
 ) [27 <./Figures/A6/A6batvolt.png> <./Figures/A6/A6batcurrent.png>]
 \openout2 = `SystemResults.aux'.
 
@@ -1291,8 +1291,8 @@ Package rerunfilecheck Info: File `e344_A1_report.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  21631 strings out of 478927
- 387351 string characters out of 2864781
- 812471 words of memory out of 3000000
+ 387349 string characters out of 2864781
+ 813471 words of memory out of 3000000
  38628 multiletter control sequences out of 15000+600000
  488089 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1312,7 +1312,7 @@ ic/lm/lmssbo10.pfb><G:/Programs/miktex/fonts/type1/public/lm/lmssbx10.pfb><G:/P
 rograms/miktex/fonts/type1/public/lm/lmsy10.pfb><G:/Programs/miktex/fonts/type1
 /public/lm/lmsy6.pfb><G:/Programs/miktex/fonts/type1/public/lm/lmsy7.pfb><G:/Pr
 ograms/miktex/fonts/type1/public/lm/lmsy8.pfb>
-Output written on e344_A1_report.pdf (46 pages, 11833139 bytes).
+Output written on e344_A1_report.pdf (46 pages, 11920456 bytes).
 PDF statistics:
  1088 PDF objects out of 1200 (max. 8388607)
  179 named destinations out of 1000 (max. 500000)
