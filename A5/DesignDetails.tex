@@ -223,7 +223,7 @@ The fundamental design is the same as in section \ref{sec:high}, the only differ
  	\label{fig:schmidt2}
  \end{figure}
 
-  This configuration compares an input voltage with a constant reference voltage and the output will switch to the positive supply rail at an input voltage of $V_{TU}$ and to the negative supply rail at $V_{TL}$ (refer to \ref{fig:schmidt}). A divided voltage from the 5V regulator is used as a reference voltage because it will remain "constant". The suitable $V_{ref-Schmidt}$ is calculated below and $V_{ref-Schmidt}$ is connected to a voltage follower op amp to prevent the positive feedback from affecting the input voltage. The battery voltage is divided to be 4.5V ($\frac{7.2*50}{50+30}$=4.5V) at the op amp terminal using $R_7$ and $R_8$(refer to figure \ref{fig:under}). With a battery terminal voltage of 6.2V the voltage at the op amp will be $V_{TU}=3.875$V and with 6V the voltage will be $V_{TL}=3.75$V. $V_L$ (approx zero volts) is the low output of the Schmidt trigger and $V_H$ is the high output of the Schmidt trigger(approx 5V). Equations below are for a non-inverting Schmidt trigger. \textbf{The equations are derived extensively in Appendix C}.
+  This configuration compares an input voltage with a constant reference voltage and the output will switch to the positive supply rail at an input voltage of $V_{TU}$ and to the negative supply rail at $V_{TL}$ (refer to \ref{fig:schmidt}). A divided voltage from the 5V regulator is used as a reference voltage because it will remain "constant". The suitable $V_{ref-Schmidt}$ is calculated below and $V_{ref-Schmidt}$ is connected to a voltage follower op amp to prevent the positive feedback from affecting the input voltage. The battery voltage is divided to be 4.5V ($\frac{7.2*100}{100+60}$=4.5V) at the op amp terminal using $R_7$ and $R_8$(refer to figure \ref{fig:under}). With a battery terminal voltage of 6.2V the voltage at the op amp will be $V_{TU}=3.875$V and with 6V the voltage will be $V_{TL}=3.75$V. $V_L$ (approx zero volts) is the low output of the Schmidt trigger and $V_H$ is the high output of the Schmidt trigger(approx 5V). Equations below are for a non-inverting Schmidt trigger. \textbf{The equations are derived extensively in Appendix C}.
 
 
 
@@ -239,15 +239,13 @@ $	V_{REF}=\frac{V_{TL}\times (R_2)}{R_1+R_2}+\frac{V_{H}\times R_1}{R_1+R_2}$
 
 
 
-Maximum common mode voltage after voltage division: $\frac{(\frac{7.2\times50}{80}+3.784)}{2}=4.142V$.
-\newline
-This is significantly less than the absolute maximum voltage of 5V+0.3V.
+Using the above equations the $\frac{R_1}{R_2}$ ratio is found to be $\frac{1}{40}$.$R_2$ is chosen to be 190k\textohm which results in $R_1$= 4.75k\textohm. The closest lab resistor is 4.7k\textohm. With our resistor values now defined $V_REF$ can be calculated to be 3.78V.
 
 
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[scale=0.24]{./Figures/undervoltage}
+\includegraphics[scale=0.5]{./Figures/undervoltage}
 \caption{Circuit diagram of under voltage circuit connected to the high side switch and the output of the previous assignment as well as the battery terminal}
 \label{fig:under}
 \end{figure}
