@@ -11,7 +11,7 @@
 \begin{figure}[!htb]
 \centering
 \includegraphics[scale=0.35]{Figures/circuitSTM.png}
-\caption{Application Circuit For LM317\cite{STM}}
+\caption[Application Circuit For LM317]{Application Circuit For LM317\cite{STM}}
 \label{fig:app}
 \end{figure}
 
@@ -21,7 +21,7 @@
 \begin{table}[!htb]
         \centering
         \footnotesize
-        \caption{Thermal Resistance Values \cite{sink}\cite{STM}}
+        \caption[Thermal Resistance Values]{Thermal Resistance Values \cite{sink}\cite{STM}}
          \begin{tabular}{lrrrr}
           \toprule
              & $Thermal Resistance$ \\
@@ -37,11 +37,79 @@
 \end{table}
 
 
-\chapter{Additional Info}
+\chapter{Hysterisis Calculations}
 \begin{figure}[!htb]
+	
 \centering
 \includegraphics[scale=0.7]{./Figures/schmidt}
-\caption{Non inverting Schmidt trigger\cite{Schmidt}}
+\caption[Non inverting Schmidt trigger]{Non inverting Schmidt trigger\cite{Schmidt}}
 \label{fig:schmidt}
 \end{figure}
+
+
+For this analysis it will be assumed that we are working with an ideal op amp.
+\begin{equation}
+	V_+=V_-  
+\end{equation}
+
+
+Take a KCL at $V_+$ in figure \ref{fig:schmidt}:
+\begin{equation}
+	\frac{V_+-V_{in}}{R_1}+\frac{V_+-V_O}{R_2}=0
+	\label{eq:kcl+}
+	\end{equation}
+		
+		
+Take a KCL at $V_-$ in figure \ref{fig:schmidt}:
+\begin{equation}
+	\frac{V_--V_{REF}}{R_p}=0
+	\label{eq:kcl-}
+\end{equation}
+
+From equation \ref{eq:kcl-} the following result is achieved.
+\begin{equation}
+	V_-=V_{REF}
+	\label{eq:kcl--}
+\end{equation}
+
+
+After rearranging eq. \ref{eq:kcl+} with $V_{in}$ as the subject. Also substitute \ref{eq:kcl--} into \ref{eq:kcl+}:
+
+		\begin{equation}
+V_{in}=\frac{V_{REF}\times (R_1+R_2)}{R_2}-\frac{V_{O}\times R_1}{R_2}
+\end{equation}
+
+The following two equations \ref{eq:vtl} and \ref{eq:vtu} are derived for the two scenarios where the output is at $V_H$ as well as $V_L$. At $V_H$ we want to find the voltage $V_{TL}$ where the the output will change rails to $V_L$. At $V_L$ we want to find the voltage $V_{TU}$ where the the output will change rails to $V_H$.:
+\begin{equation}
+	V_{TL}=\frac{V_{REF}\times (R_1+R_2)}{R_2}-\frac{V_{H}\times R_1}{R_2}
+	\label{eq:vtl}
+\end{equation}
+	
+	
+	\begin{equation}
+	V_{TU}=\frac{V_{REF}\times (R_1+R_2)}{R_2}-\frac{V_{L}\times R_1}{R_2}
+	\label{eq:vtu}
+\end{equation}
+
+Now to achieve the following equation, subtract eq. \ref{eq:vtu} from eq. \ref{eq:vtl}:
+\begin{equation}
+		V_{TL}-V_{TU}=\frac{(V_{H}-V_L)\times R_1}{R_2}
+			\label{eq:vtu-vtl}
+	\end{equation}
+		Rearrange eq. \ref{eq:vtu-vtl} to achieve the following equation:
+		\begin{equation}
+	\frac{V_{TL}-V_{TU}}{(V_{H}-V_L)}=\frac{R_1}{R_2}
+\end{equation}
+
+After calculating $\frac{R_1}{R_2}$ and therefore suitable resistors $V_{REF}$ can be found using the following equation. The following equation is obtained by making $V_{REF}$ the subject of equation \ref{eq:vtl}:
+
+\begin{equation}
+	V_{REF}=\frac{V_{TL}\times (R_2)}{R_1+R_2}+\frac{V_{H}\times R_1}{R_1+R_2}
+	\label{eq:reff}
+\end{equation}
+
+
+
+
+
 

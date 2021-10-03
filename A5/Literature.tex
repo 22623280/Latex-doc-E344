@@ -18,7 +18,7 @@ From figure \ref{fig:mppt} it can be seen that there are two points at which the
 \begin{wrapfigure}{l}{0.4\textwidth}
 \centering
 \includegraphics[width=0.36\textwidth]{Figures/MPPT.png}
-\caption{Maximum power point tracking \cite{MPPT}}
+\caption[{Maximum power point tracking }]{Maximum power point tracking \cite{MPPT}}
 \label{fig:mppt}
 \end{wrapfigure}
 The voltage at which the peak of the PV curve occurs is the voltage at which the maximum power is achieved. When external factors change such as temperature, light intensity and spectrum of the light, it causes the I-V and P-V curves to change \cite{vidmppt}. Under standard conditions the MPP of the solar panel in question occurs at 18.21V and 0.28A. To calculate the efficiency of the solar panel you take the radiance of the light shining on the module and multiply it by the area of the module. This is the ideal maximum power for that light. To get efficiency divide the previous answer by the power output. In general solar panels have an efficiency of 20\%\cite{eff}. 
@@ -67,7 +67,7 @@ The battery capacity of a Lead acid battery can not be used from 100\% to 0\% bu
 \begin{wrapfigure}{l}{0.4\textwidth}
 \centering
 \includegraphics[scale=0.4]{Figures/cc.jpg}
-\caption{Charging states of lead acid battery \cite{RS}}
+\caption[{Charging states of lead acid battery }]{Charging states of lead acid battery \cite{RS}}
 \label{fig:states}
 \end{wrapfigure}
  Battery charging tends to take on three different stages, these three stages can be referred to as bulk, absorption and float\cite{CC}.In the bulk charging stage the current is held at a constant amount and the voltage increases. For our battery this means 0.2-0.3C until the voltage reaches 6.75V\cite{RS}. The bulk stage includes the highest charging rate. During the absorption stage the voltage remains constant and the current decreases which leads to a decreasing charge rate. For our battery this means 0.1C until the voltage reaches 7.2V\cite{RS}. At the the end of the absorption stage the battery is at 100\% capacity. The next stage of charging is float charging where the voltage is decreased slightly (in our case to 6.75 - 6.9) and the current is at approximately 1\% of the battery capacity, this charging state is used to keep the battery charged indefinitely \cite{CC}. All these different states can be seen in figure \ref{fig:states} 
@@ -82,7 +82,7 @@ The battery capacity of a Lead acid battery can not be used from 100\% to 0\% bu
 \begin{wrapfigure}{l}{0.57\textwidth}
 \centering
 \includegraphics[scale=0.5]{Figures/fig2.png}
-\caption{Discharge Characteristics \cite{Charging-Lead}}
+\caption[]{Discharge Characteristics}{Discharge Characteristics \cite{Charging-Lead}}
 \label{fig:discharge}
 \end{wrapfigure}
  As the C rating decreases the run time does not increase linearly (refer to figure \ref{fig:discharge}), the reason for this is because a higher discharge rate causes the battery to lose energy to heat as more current flows through the internal resistance \cite{pSonic}. At higher discharge rates the terminal voltage is lower due to the internal resistance causes a voltage drop.

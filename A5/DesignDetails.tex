@@ -61,7 +61,8 @@ The biggest flaw with this method is that $V_{schottky}$ voltage is not accurate
 \begin{wrapfigure}{l}{0.25\textwidth}
 \centering
 \includegraphics[scale=0.2]{Figures/temp.png}
-\caption{Output current vs. input-output
+\caption[{Output current vs. input-output
+differential voltage for different junction temperatures}]{Output current vs. input-output
 differential voltage for different junction temperatures\cite{STM}}
 \label{fig:temp}
 \end{wrapfigure}
@@ -181,23 +182,24 @@ V_{SGp}=V_{R1}=I_{Dn}*R_1
 \newpage
 \section{Over current protection}
 From the battery's perspective, it will be able to discharge 60A for 5 seconds as an absolute maximum \cite{RS}. The battery also has a maximum recommended charging limit of 1.2A \cite{RS}. We will not be charging at 1.2A, we will be charging at approximately 400mA (I chose 300mA refer to \ref{sec:regulation}).
-\newline\newline
+
 The load we are going to use will be made up of 5 ultra bright LEDs. The peak forward current of one of these LEDs is 100mA \cite{LED}. This means that for the peak case, just the load will use 500mA of current, however we will be designing for the typical 20mA per LED with current limiting resistors (refer to section \ref{sec:loswide}). This is then equated to 100mA for the entire load.
-\newline\newline
+
 From the previously mentioned information we have 4 different current limit values. Two of these values are limits regarding the battery's limits and 2 are limits regarding what the circuit should charge/discharge. The fuse will be connected between the battery and the complete circuit, all current charging/discharging from the battery will flowing through the designed fuse.
-\newline\newline
+
 The battery's limits are well above what the circuit will require, therefore the upper limit of the circuit charging will be used as the reference for the design. I then doubled the 400mA charging current to set the fuse for an abnormal condition. If 800mA of current flow then something is not working correctly and the battery should stop discharging. The closest fuse we have to this is 1A. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Undervoltage protection}
-In the design below the concepts of a op amp voltage comparator is used. A comparator will amplify the difference of the two terminals as can be seen with this equation. $V_{OUT} = A_O(V_+ – V_-)$ \cite{Comp}. The output voltage of a op amp can not go above the positive supply rail or below the negative supply rail. The common mode voltage of a op amp is defined as $V_{CM}=\frac{V_+ +V_-}{2}$ and the differential voltage is defined as $V_{D}=(V_+-V_-)$.\begin{wrapfigure}{l}{0.4\textwidth}
+In the design below the concepts of a op amp voltage comparator is used. A comparator will amplify the difference of the two terminals.
+\begin{figure}[!htb]
 \centering
 \includegraphics[scale=0.2]{./Figures/hyst}
-\caption{Op-Amp with hysteresis implemented compared with no hysteresis \cite{TexHyst}}
+\caption[{Op-Amp with hysteresis implemented compared with no hysteresis}]{Op-Amp with hysteresis implemented compared with no hysteresis \cite{TexHyst}}
 \label{fig:hyst}
-\end{wrapfigure}
-A problem with the standard comparator op-amp configuration is that if a noisy signal is placed at the input of the op-amp it could cause the op amp output to switch between the two supply rails in a short period of time leading to a signal as can be seen in figure \ref{fig:hyst}. A op amp with hysteresis means that the op amp has positive feedback from the output and this causes the output of the op amp to switch from rail to rail at two voltages $V_{TU}$ and $V_{TL}$ , refer to \ref{fig:schmidt}.
+\end{figure}
+A problem with the standard comparator op-amp configuration is that if a noisy signal is placed at the input of the op-amp it could cause the op amp output to switch between the two supply rails in a short period of time leading to a signal as can be seen in figure \ref{fig:hyst}. A op amp with hysteresis means that the op amp has positive feedback from the output and this causes the output of the op amp to switch from rail to rail at two voltages $V_{TU}$ and $V_{TL}$ , refer to \ref{fig:schmidt2}.
 
 
 
@@ -212,24 +214,31 @@ The fundamental design is the same as in section \ref{sec:high}, the only differ
 
 
 \subsection{Voltage monitoring with hysteresis design}
-The absolute maximum common mode input range of the MCP op amp is from $V_{DD}+0.3$ to $V_{SS}-0.3$. The absolute maximum differential voltage input is $|V_{DD}-V_{SS}|$ \cite{MCP}. The positive supply rail of the op amps in this design will be connected to the 5V regulator and the negative supply rails will be grounded($V_{DD}$ and $V_{SS}$). When designing the input voltages to the op amp it was decided to step the voltages down using voltage division because if the battery terminal (max of 7.2V) is connected and a 0V is connected then the differential voltage maximum will be exceeded. If the 7.2V and a 5V is connected to an op amp the common mode voltage will also be exceeded. The circuit that was built was based off the non inverting Schmidt trigger as can be seen in figure \ref{fig:schmidt}. This configuration compares an input voltage with a constant reference voltage and the output will switch to the positive supply rail at an input voltage of $V_{TU}$ and to the negative supply rail at $V_{TL}$ (refer to \ref{fig:schmidt}). The divided voltage from the 5V regulator is used as a reference voltage because it will remain "constant". The suitable $V_{ref-Schmidt}$ is calculated below and $V_{ref-Schmidt}$ is connected to a voltage follower op amp. The battery terminal is then also stepped down in order for the op amp not to exceed common and differential voltage limits and then it is passed through a voltage following op amp. The voltage follower op amp prevents the positive feedback of the Schmidt trigger from interfering with the input voltage at $V_{in}$ (refer to \ref{fig:schmidt}). The battery voltage is divided to be 4.5V ($\frac{7.2*50}{50+30}$=4.5V) at the op amp terminal using $R_7$ and $R_8$(refer to figure \ref{fig:under}). With a battery terminal voltage of 6.2V the voltage at the op amp will be $V_{TU}=3.875$V and with 6V the voltage will be $V_{TL}=3.75$V. $V_L$ (approx 0.5V) is the low output of the Schmidt trigger and $V_H$ is the high output of the Schmidt trigger(approx 5V). Equations below are for a non-inverting Schmidt trigger  as can be seen in figure \ref{fig:schmidt}. The resistors correspond to figure \ref{fig:under}.
+ The positive supply rail of the op amps in this design will be connected to the 5V regulator and the negative supply rails will be grounded($V_{DD}$ and $V_{SS}$). When designing the input voltages to the op amp it was decided to step the voltages down using voltage division because if the battery terminal (max of 7.2V) is connected and a 0V is connected then the differential voltage maximum will be exceeded. The circuit that was built was based off the non inverting Schmidt trigger as can be seen in figure \ref{fig:schmidt2} \cite{Schmidt}.
+ 
+ \begin{figure}[!htb]
+ 	\centering
+ 	\includegraphics[scale=0.5]{./Figures/schmidt}
+ 	\caption[Non inverting Schmidt trigger]{Non inverting Schmidt trigger\cite{Schmidt}}
+ 	\label{fig:schmidt2}
+ \end{figure}
 
-\begin{equation}
-    V_{TU}=V_s-V_L\times\frac{R_3}{R_4} 
-    \label{eq:vtu}
-\end{equation}
-\begin{equation}
-    V_{TL}=V_s-V_H\times\frac{R_3}{R_4} 
-    \label{eq:vtl}
-\end{equation}
-\begin{equation}
-    V_{ref-Schmidt}=\frac{V_s}{1+\frac{R_3}{R_4}}
-    \label{eq:ref}
-\end{equation}
+  This configuration compares an input voltage with a constant reference voltage and the output will switch to the positive supply rail at an input voltage of $V_{TU}$ and to the negative supply rail at $V_{TL}$ (refer to \ref{fig:schmidt}). A divided voltage from the 5V regulator is used as a reference voltage because it will remain "constant". The suitable $V_{ref-Schmidt}$ is calculated below and $V_{ref-Schmidt}$ is connected to a voltage follower op amp to prevent the positive feedback from affecting the input voltage. The battery voltage is divided to be 4.5V ($\frac{7.2*50}{50+30}$=4.5V) at the op amp terminal using $R_7$ and $R_8$(refer to figure \ref{fig:under}). With a battery terminal voltage of 6.2V the voltage at the op amp will be $V_{TU}=3.875$V and with 6V the voltage will be $V_{TL}=3.75$V. $V_L$ (approx zero volts) is the low output of the Schmidt trigger and $V_H$ is the high output of the Schmidt trigger(approx 5V). Equations below are for a non-inverting Schmidt trigger. \textbf{The equations are derived extensively in Appendix C}.
 
 
-Solve simultaneously for $\frac{R_3}{R_4} :\ $$V_s= V_H\times\frac{R_3}{R_4} + V_{TL}$\  \ and \  \ $V_s= V_L\times\frac{R_3}{R_4} + V_{TU}$ \ $\frac{R_3}{R_4}=\frac{1}{36}$ \ $V_s$=3.889V. Using $V_s $ and  eq \ref{eq:ref} $V_{ref-Schmidt}$ can be solved to be 3.784V, and the appropriate voltage division for can be set up ($\frac{R_6}{R_6+R_5}$). The resistor magnitudes of the resistors used in voltage divisions were chosen to be big so that little current flows (op amps require very small amounts of current at inputs).
-\newline
+
+\begin{center}
+	$\frac{V_{TL}-V_{TU}}{(V_{H}-V_L)}=\frac{R_1}{R_2}$  
+\end{center}
+
+\begin{center}
+	
+$	V_{REF}=\frac{V_{TL}\times (R_2)}{R_1+R_2}+\frac{V_{H}\times R_1}{R_1+R_2}$
+\end{center}
+
+
+
+
 Maximum common mode voltage after voltage division: $\frac{(\frac{7.2\times50}{80}+3.784)}{2}=4.142V$.
 \newline
 This is significantly less than the absolute maximum voltage of 5V+0.3V.

@@ -135,7 +135,7 @@ From the values in table \ref{tab:PMOSmeas} it can be seen that when the NMOS ga
   		\includegraphics[width=1\linewidth]{./Figures/A32.png}
 		   \caption{ } \label{subfig:current}
      \end{subfigure}
-   \caption[{LT spice Results}]{LT spice results   (a) Relevant Voltages (b)  Relevant Currents }
+   \caption[{LTSPICE Under voltage circuit results}]{LTSPICE Under voltage circuit results   (a) Relevant Voltages (b)  Relevant Currents }
     \label{fig:lt}
  \end{figure}
 
@@ -176,6 +176,7 @@ From figure \ref{subfig:voltage} it can be seen that the op amp transitions at t
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Current sense}
 
 
@@ -196,22 +197,17 @@ From figure \ref{subfig:voltage} it can be seen that the op amp transitions at t
  
  \end{figure}
 
-From figures \ref{subfig:noise} and \ref{subfig:sim} it can be seen that the necessary noise specifications are achieved and that the correct output range of 3V lies within the 0-5V boundary.
-\begin{figure}[!htb]
-\centering
-\includegraphics[scale=0.7]{./Figures/meas.png}
-\caption{Oscilloscope measurements with various switch states}
-\label{fig:meas}
-\end{figure}
+From figures \ref{subfig:noise} and \ref{subfig:sim} it can be seen that the necessary noise specifications are achieved and that the correct output range of 3V lies within the 0-5V boundary. The output voltage also follows the current through the load as required.
 
-For the following explanation eq.\ref{eq:refeq} will help explain reasoning. When both switches are off the current flowing through the sense resistor is 0A as can be seen in figure \ref{fig:meas}.For this reason the output is equal to the reference voltage. When the High side switch turns on a positive current flows through the sense resistor, therefore the output increases. As the low side switch switches on, both switches are now on. The output voltage is still higher than the reference voltage because the charging current is greater than the discharging current resulting in a net positive current flow. When the high side switch then turns off the output voltage moves to below the reference voltage because now there is a net negative current through the resistor. As the last 2 LEDs are turned on the output of the TSC213 drops further as the negative (discharging) current increases.
+
+
 
 
 
 \begin{table}[!htb]
         \centering
         \footnotesize
-        \caption{Resistor measurements}
+        \caption{Voltage across resistors when LEDs are on}
          \begin{tabular}{lrrrr}
           \toprule
              & $Resistor \ Voltage$ & $Calculated \ Current$ \\
@@ -239,6 +235,8 @@ For the following explanation eq.\ref{eq:refeq} will help explain reasoning. Whe
              &   [V]&[mA]  &[mA]&[\%]\\
           \midrule
          Both switches off      & 1.75 &0 &0 &0 \\
+         Highside switch on		&2.28& -& - &-\\	
+         Both switches on (3 LEDs)		&2.06& -& - &-\\	
          Low side switch on(3 LEDs)     & 1.525 & 45.8&45 &1.75 \\
          Low side switch on(5 LEDs)    & 1.383 & 73.4&76.2 &3.85 \\
           
@@ -246,7 +244,13 @@ For the following explanation eq.\ref{eq:refeq} will help explain reasoning. Whe
         \end{tabular}
      \label{tab:compare}
 \end{table}
-The LT spice simulations(figure \ref{subfig:sim}) show the output working correctly and the noise( figure \ref{subfig:noise}) is within spec. The measured noise on the output of the TSC213 was found to be 40mV ($V_{PK-PK}$) on the oscilloscope. Larger capacitors were added to try reduce the noise, this was not successful. When the wall plug was powered off and only the battery was supplying the peak to peak voltage dropped to 8mV. This then identified the largest source of noise as the wall plug. Once again a large capacitor was used to try filter out the noise from the 12V, however this also did not decrease the output noise. The current through the LEDs is slightly less than 20mA as can be seen in table \ref{tab:resistor meas} as a result of the resistors chose in section \ref{sec:loadcontrol_design}. Regardless of the noise relatively accurate current measurements were obtained from the TSC213 output as can be seen in table \ref{tab:compare}.
+
+
+For the following explanation eq.\ref{eq:refeq} will help explain reasoning. When both switches are off the current flowing through the sense resistor is 0A.For this reason the output is equal to the reference voltage. When the High side switch turns on a positive current flows through the sense resistor, therefore the output increases. As the low side switch switches on, both switches are now on. The output voltage is still higher than the reference voltage because the charging current is greater than the discharging current resulting in a net positive current flow. When the high side switch then turns off the output voltage moves to below the reference voltage because now there is a net negative current through the resistor. As the last 2 LEDs are turned on the output of the TSC213 drops further as the negative (discharging) current increases.
+
+
+
+The measured noise on the output of the TSC213 was found to be 40mV ($V_{PK-PK}$) on the oscilloscope. Larger capacitors were added to try reduce the noise, this was not successful. When the wall plug was powered off and only the battery was supplying the peak to peak voltage dropped to 8mV. This then identified the largest source of noise as the wall plug. Once again a large capacitor was used to try filter out the noise from the 12V, however this also did not decrease the output noise. The current through the LEDs is slightly less than 20mA as can be seen in table \ref{tab:resistor meas} as a result of the resistors chose in section \ref{sec:loadcontrol_design}. Regardless of the noise relatively accurate current measurements were obtained from the TSC213 output as can be seen in table \ref{tab:compare}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
