@@ -36,7 +36,8 @@
 \contentsline {section}{\numberline {4.6}Supply Voltage measurement}{26}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Battery Voltage measurement}{27}{section.4.7}%
 \contentsline {chapter}{\numberline {5}System results}{28}{chapter.5}%
-\contentsline {chapter}{Bibliography}{31}{chapter*.48}%
+\contentsline {chapter}{Bibliography}{31}{chapter*.50}%
 \contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{34}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Data sheet info}{35}{appendix.B}%
 \contentsline {chapter}{\numberline {C}Hysterisis Calculations}{36}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Differential amplifier calculations}{38}{appendix.D}%

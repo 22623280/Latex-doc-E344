@@ -37,6 +37,11 @@
 \end{table}
 
 
+
+
+
+
+
 \chapter{Hysterisis Calculations}
 \begin{figure}[!htb]
 	
@@ -91,7 +96,7 @@ The following two equations \ref{eq:vtl} and \ref{eq:vtu} are derived for the tw
 	\label{eq:vtu}
 \end{equation}
 
-Now to achieve the following equation, subtract eq. \ref{eq:vtu} from eq. \ref{eq:vtl}:
+Now to achieve the following equation, subtract eq. \ref{eq:vtl} from eq. \ref{eq:vtu}:
 \begin{equation}
 		V_{TL}-V_{TU}=\frac{(V_{H}-V_L)\times R_1}{R_2}
 			\label{eq:vtu-vtl}
@@ -109,6 +114,27 @@ After calculating $\frac{R_1}{R_2}$ and therefore suitable resistors $V_{REF}$ c
 \end{equation}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Differential amplifier calculations}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.4\linewidth]{Figures/A6/difamp.jpg}
+	\caption[Differential amplifier op amp setup]{Differential amplifier op amp setup\cite{difAmp} }
+	\label{fig:difamp2}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.4\linewidth]{Figures/A6/derive.png}
+	\caption[Differential amplifier op amp setup derivation]{Differential amplifier op amp setup derivation\cite{difAmp} }
+	\label{fig:derive}
+\end{figure}
+
+
+If $R_1=R_2$ and $R_3=R_4$ then the equation will simplify to :
+\begin{equation}
+	V_{out}=\frac{R_3}{R_1}\times(V_2-V_1)
+\end{equation}
 
 
 

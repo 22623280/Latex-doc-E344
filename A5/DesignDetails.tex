@@ -223,7 +223,7 @@ The fundamental design is the same as in section \ref{sec:high}, the only differ
  	\label{fig:schmidt2}
  \end{figure}
 
-  This configuration compares an input voltage with a constant reference voltage and the output will switch to the positive supply rail at an input voltage of $V_{TU}$ and to the negative supply rail at $V_{TL}$ (refer to \ref{fig:schmidt}). A divided voltage from the 5V regulator is used as a reference voltage because it will remain "constant". The suitable $V_{ref-Schmidt}$ is calculated below and $V_{ref-Schmidt}$ is connected to a voltage follower op amp to prevent the positive feedback from affecting the input voltage. The battery voltage is divided to be 4.5V ($\frac{7.2*100}{100+60}$=4.5V) at the op amp terminal using $R_7$ and $R_8$(refer to figure \ref{fig:under}). With a battery terminal voltage of 6.2V the voltage at the op amp will be $V_{TU}=3.875$V and with 6V the voltage will be $V_{TL}=3.75$V. $V_L$ (approx zero volts) is the low output of the Schmidt trigger and $V_H$ is the high output of the Schmidt trigger(approx 5V). Equations below are for a non-inverting Schmidt trigger. \textbf{The equations are derived extensively in Appendix C}.
+  This configuration compares an input voltage with a constant reference voltage and the output will switch to the positive supply rail at an input voltage of $V_{TU}$ and to the negative supply rail at $V_{TL}$ (refer to \ref{fig:schmidt2}). A divided voltage from the 5V regulator is used as a reference voltage because it will remain "constant". The suitable $V_{ref-Schmidt}$ is calculated below and $V_{ref-Schmidt}$ is connected to a voltage follower op amp to prevent the positive feedback from affecting the input voltage. The battery voltage is divided to be 4.5V ($\frac{7.2*100}{100+60}$=4.5V) at the op amp terminal using $R_7$,$R_{10}$ and $R_8$(refer to figure \ref{fig:under}). With a battery terminal voltage of 6.2V the voltage at the op amp will be $V_{TU}=3.875$V and with 6V the voltage will be $V_{TL}=3.75$V. $V_L$ (approx zero volts) is the low output of the Schmidt trigger and $V_H$ is the high output of the Schmidt trigger(approx 5V). Equations below are for a non-inverting Schmidt trigger. \textbf{The equations are derived extensively in Appendix C}.
 
 
 
@@ -239,7 +239,7 @@ $	V_{REF}=\frac{V_{TL}\times (R_2)}{R_1+R_2}+\frac{V_{H}\times R_1}{R_1+R_2}$
 
 
 
-Using the above equations the $\frac{R_1}{R_2}$ ratio is found to be $\frac{1}{40}$.$R_2$ is chosen to be 190k\textohm which results in $R_1$= 4.75k\textohm. The closest lab resistor is 4.7k\textohm. With our resistor values now defined $V_REF$ can be calculated to be 3.78V.
+Using the above equations the $\frac{R_1}{R_2}$ ratio is found to be $\frac{1}{40}$.$R_2$ is chosen to be 190k\textohm which results in $R_1$= 4.75k\textohm. The closest lab resistor is 4.7k\textohm. With our resistor values now defined $V_{REF}$ can be calculated to be 3.78V.
 
 
 
@@ -249,6 +249,33 @@ Using the above equations the $\frac{R_1}{R_2}$ ratio is found to be $\frac{1}{4
 \caption{Circuit diagram of under voltage circuit connected to the high side switch and the output of the previous assignment as well as the battery terminal}
 \label{fig:under}
 \end{figure}
+
+
+
+\begin{table}[!htb]
+	\centering
+	\footnotesize
+	\caption[Undervoltage circuit op amp requirements]{Undervoltage circuit op amp requirements \cite{MCP}}
+	\begin{tabular}{lrrrr}
+		\toprule
+		& $Min$ &$Max$&$Designed$\\
+		&[V]&[V]&[V]\\
+		\midrule
+		All op amps Difference between supply rails $V_{DD} - V_{SS}$ & -& 7  &5   \\
+		U2 Common mode voltage $(\frac{V_+ + V_-}{2}-V_{SS})$ &  -0.3&5.3&3.75-4.5\\
+		U2 Input voltages to $V_-$ and  $V_+$   &  -1    &6& 3.75-4.5 \\
+		
+		
+		U3 Common mode voltage $(\frac{V_+ + V_-}{2}-V_{SS})$ &  -0.3&5.3&3.72-4.12\\
+		U3 Input voltages to $V_-$ and $V_+$  &  -1    &6&0-4.51 \\
+		U3 Differential Voltage $ (|V_+ - V_-|)$ & -& 7& 4.51   \\
+		
+		\bottomrule
+	\end{tabular}
+	\label{tab:MCPunder}
+\end{table}
+
+From table \ref{tab:MCPunder}, all op amps are operating within working ranges.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -338,9 +365,9 @@ Using eq.\ref{eq:freq} with a chosen capacitor of 200nF the required resistance 
 \newpage
 
 \section{Battery voltage measurement}
-In this design the battery voltage will be go through a signal conditioning process to make it readable from the perspective of an ADC. The ADC we are going to use requires a voltage between 0 and 5V. The battery voltage will vary between 6V and 7.2V if the complete system is working as designed. For the purpose of the design an additional 0.3V will be extended on to either side of the boundaries to give a margin for error (5.7V to 7.5V).  Using Op Amps the battery voltage will be designed to vary linearly with an output swing of 4.3V (0.5V to 4.8V). As the battery voltage increases the ADC voltage will increase. The ADC output is less than five volts in order to prevent damage to the ADC as well as the op amps. The chosen resistors are chosen to be bigger than 20k\textohm \ in order to minimise current drawn from the battery and the five volt regulator. 
+In this design the battery voltage will be go through a signal conditioning process to make it readable from the perspective of an ADC. The ADC we are going to use requires a voltage between 0 and 5V. The battery voltage will vary between 6V and 7.2V if the complete system is working as designed. 
 
-Another consideration that needs to be made is that our differential voltage and common mode voltage requirement must be met ($|V_{SS}-V_{DD}|$ and  $V_{SS}$ – 0.3 — $V_{DD}$ + 0.3) \cite{MCP}. To fit this requirement the input voltage is divided with resistors to be  four volts at the maximum designed voltage of 7.5V  as can be see in figure \ref{fig:batcirc}, this will result in a voltage of 3.04V when the battery voltage is 5.7V.
+For the purpose of the design an additional 0.3V will be extended on to either side of the boundaries to give a margin for error (5.7V to 7.5V).  Using Op Amps the battery voltage will be designed to vary linearly with an output swing of 4.3V (0.5V to 4.8V). As the battery voltage increases the ADC voltage will increase. The ADC output is less than five volts in order to prevent damage to the ADC as well as the op amps. The chosen resistors are chosen to be bigger than 20k\textohm \ in order to minimise current drawn from the battery and the five volt regulator. To fit op amp spec requirements the input voltage is divided with resistors to be  four volts at the maximum designed voltage of 7.5V  as can be see in figure \ref{fig:batcirc}, this will result in a voltage of 3.04V when the battery voltage is 5.7V.
 
 \begin{figure}[!htb]
 	\centering
@@ -349,14 +376,14 @@ Another consideration that needs to be made is that our differential voltage and
 	\label{fig:difamp}
 \end{figure}
 
-To achieve the differential amplifier setup from figure \ref{fig:difamp} is used. In this design $R_1$=$R_2$ and $R_3$=$R_4$ \cite{difAmp}. The corresponding equation is as seen in equation \ref{eq:diff}.  $V_1$ will be used as the reference voltage and $V_2$ will be our input from the battery.
+To achieve the differential amplifier setup from figure \ref{fig:difamp} is used. In this design $R_1$=$R_2$ and $R_3$=$R_4$ \cite{difAmp}. The corresponding equation is as seen in equation \ref{eq:diff}.  $V_1$ will be used as the reference voltage and $V_2$ will be our input from the battery. \textbf{The derivation can be found in Appendix D \ref{fig:derive}}.
 
 \begin{equation}
 	V_{out}=\frac{R_3}{R_1}\times(V_{2(bat)}-V_{1(ref)}) 
 	\label{eq:diff}
 \end{equation}
 
-Using eq.\ref{eq:diff} $V_{1(ref)}$ and the gain is solved for simultaneously, by setting the equations for the scenarios when the battery voltage is 7.5V and 5.7V.
+Using eq.\ref{eq:diff}, $V_{1(ref)}$ and the gain is solved for simultaneously by setting the equations for the scenarios when the battery voltage is 7.5V and 5.7V.
 
 \begin{center}
 	 $4.8V=\frac{R_3}{R_1}\times(4V-V_{1(ref)}) \ \ \ \ \ \ \ \ 0.5=\frac{R_3}{R_1}\times(3.04V-V_{1(ref)}) $\newline 
@@ -374,6 +401,35 @@ $R_3$ is then chosen to be 100k\textohm. $R_1$ is the calculated to be 22.32k\te
 	\label{fig:batcirc}
 \end{figure}
 
+
+\begin{table}[!htb]
+	\centering
+	\footnotesize
+	\caption[Battery voltage measurement circuit op amp requirements]{Battery voltage measurement circuit op amp requirements \cite{MCP}}
+	\begin{tabular}{lrrrr}
+		\toprule
+		& $Min$ &$Max$&$Designed$ $range / value$\\
+		&[V]&[V]&[V]\\
+		\midrule
+		All op amps Difference between supply rails $V_{DD} - V_{SS}$ & -& 7  &5   \\
+		
+		U1 Common mode voltage $(\frac{V_+ + V_-}{2}-V_{SS})$ &  -0.3&5.3&3-4\\
+		U1 Input voltages to $V_-$ and $V_+$  &  -1    &6& 3-4 \\
+		
+		U5 Common mode voltage $(\frac{V_+ + V_-}{2}-V_{SS})$ &  -0.3&5.3&2.92\\
+		U5 Input voltages to $V_-$ and $V_+$ &  -1    &6& 3-4 \\
+		
+		
+		U4 Common mode voltage $(\frac{V_+ + V_-}{2}-V_{SS})$ &  -0.3&5.3&2.48-3.28\\
+		U4 Input voltages to $V_-$ and $V_+$  &  -1    &6&2.48-3.28 \\
+		U4 Differential Voltage $ (|V_+ - V_-|)$ & -& 5&  3.28  \\
+		
+		\bottomrule
+	\end{tabular}
+	\label{tab:MCPbat}
+\end{table}
+
+From table \ref{tab:MCPbat}, all op amps are operating within working ranges.
 
 
 
