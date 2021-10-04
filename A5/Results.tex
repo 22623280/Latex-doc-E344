@@ -1,6 +1,6 @@
 \chapter{Subsystem results}\label{chap:res}
 \section{Voltage regulation}
-In the following graphs three different conditions will be setup to analyse the simulations performance. The three setups include having the supply powered on and then turning the NMOS off when it was initially on. The second setup is with the supply on and then turning the initially off NMOS, on. the last setup will be with the NMOS off and the supply off. In each of the setups the currents and voltages at the chosen nodes will be analysed.
+In the following graphs three different conditions will be setup to analyse the simulations performance. The three setups include having the supply powered on and then turning the NMOS off when it was initially on. The second setup is with the supply on and then turning the initially off NMOS, on. The last setup will be with the NMOS off and the supply off.
 
 \begin{figure}[!htb]
  \footnotesize
@@ -15,11 +15,11 @@ In the following graphs three different conditions will be setup to analyse the 
   		\includegraphics[width=1\linewidth]{./Figures/A2-2.png}
 		   \caption{ } \label{subfig:A2-2}
      \end{subfigure}
-   \caption[{LTSPICE switch turning on results}]{LTSpice Results for switch turning on  (a)  Relevant Voltages (b)  Relevant currents  }
+   \caption[{LTSPICE switch turning on results}]{LTSPICE Results for switch turning on  (a)  Relevant Voltages (b)  Relevant currents  }
     \label{fig:spiceReg}
  \end{figure}
 
- From figures \ref{subfig:A2-2} it can be seen that the maximum current flowing into the battery is just over 300mA. This current is much less than 1.2A and will therefore not damage the battery. The current only starts flowing when "charge on" (the control signal to the high side switch) goes high.
+ From figures \ref{subfig:A2-2} it can be seen that the maximum current flowing into the battery is just under 400mA. This 400mA should correspond exactly to the Supply current, but it has an error of 1.5\% which is likely to the assumptions made in the design section. The current only starts flowing when "charge on" (the control signal to the high side switch) goes high.
  
  \begin{figure}[!htb]
  \footnotesize
@@ -34,7 +34,7 @@ In the following graphs three different conditions will be setup to analyse the 
   		\includegraphics[width=1\linewidth]{./Figures/A2-4.png}
 		   \caption{ } \label{subfig:A2-4}
      \end{subfigure}
-   \caption[{LTSPICE switch turning off results}]{LTSpice Results for switch turning off  (a)  Relevant Voltages (b)  Relevant currents  }
+   \caption[{LTSPICE switch turning off results}]{LTSPICE Results for switch turning off  (a)  Relevant Voltages (b)  Relevant currents  }
     \label{fig:two}
  \end{figure}
  \newpage
@@ -95,7 +95,7 @@ From table \ref{tab:regmeas} it can be seen that voltage is operating in the cor
  \footnotesize
  \centering
 \includegraphics[width=0.8\textwidth]{Figures/A1.png}
-\caption{LTSpice simulation results for high side switch on the supply side}
+\caption{LTSPICE simulation results for high side switch on the supply side}
 \label{fig:high-res}
  \end{figure}
  
@@ -118,7 +118,7 @@ From table \ref{tab:regmeas} it can be seen that voltage is operating in the cor
         \end{tabular}
      \label{tab:PMOSmeas}
 \end{table}
-From the values in table \ref{tab:PMOSmeas} it can be seen that when the NMOS gate voltage goes high a voltage above the threshold voltage of the PMOS is applied, thus turning the switch on. For additional proof that the switch works, refer to figure \ref{fig:meas} where this switch successfully controlled the switching on and off of the charging circuit.
+From the values in table \ref{tab:PMOSmeas} it can be seen that when the NMOS gate voltage goes high a voltage above the threshold voltage of the PMOS is applied, thus turning the switch on. For additional proof that the switch works, refer to table \ref{tab:compare} where this switch successfully controlled the switching on and off of the charging circuit.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Undervoltage protection}

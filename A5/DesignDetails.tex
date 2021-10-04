@@ -21,7 +21,7 @@ A voltage of 7.2V is designed for using equation \ref{eq:vo}. This voltage is sl
     $\frac{R_2}{R_1}=\frac{7.2}{1.25}-1=4.76$
 \end{center}
 
-The resistor values used should be kept low so that the current flowing through $R_1$ and $R_{2}$ is significantly larger than $I_{adj}$. If this is done then $I_{adj}$ can be neglected. $R_{2}$ is chosen to be 1200\textohm. Therefore $R_{1}$ will be 252\textohm. Refer to figure \ref{fig:app}.
+The resistor values used should be kept low so that the current flowing through $R_1$ and $R_{2}$ is significantly larger than $I_{adj}$. If this is done then $I_{adj}$ can be neglected. $R_{2}$ is chosen to be 1000\textohm. Therefore $R_{1}$ will be 210\textohm. Refer to figure \ref{fig:app}.
 
 
 \begin{center}
@@ -32,7 +32,7 @@ Because 5mA is 50 times larger than the maximum, the $I_{adj}$ can be assumed to
 
 \subsection{Current limit}
 
-The current limiting was implemented by calculating a value for $R_4$ (refer to \ref{fig:circuit}). The maximum current that was designed for was 300mA. This value was chosen because the battery data sheet recommends 0.1C for charging which equates to 400mA \cite{RS}. 300mA is then chosen because the solar panel at its maximum power will only be able to supply just over 0.3A. This current will be designed flow when the battery is at its depleted voltage of 6V. To determine $R_s$ $V_O$ must be calculated when $V_{bat}$=6V. Using the calculated $V_0$ the resistor $R_s$ is designed for the desired current.
+The current limiting was implemented by calculating a value for $R_4$ (refer to \ref{fig:circuit}). The maximum current that was designed for was 400mA. This value was chosen because the battery data sheet recommends 0.1C for charging which equates to 400mA \cite{RS}. This current will be designed flow when the battery is at its depleted voltage of 6V. To determine $R_s$ $V_O$ must be calculated when $V_{bat}$=6V. Using the calculated $V_0$ the resistor $R_s$ is designed for the desired current.
 
 
 
@@ -52,9 +52,9 @@ The current limiting was implemented by calculating a value for $R_4$ (refer to 
     
 \end{center}
 \begin{center}
-    $R_s=\frac{V_{O-reg}-(V_{bat}+V_{schottky})}{300mA}=\frac{6.539V-6.4V}{300mA}=0.46$\textohm
+    $R_s=\frac{V_{O-reg}-(V_{bat}+V_{schottky})}{400mA}=\frac{6.539V-6.4V}{300mA}=0.347$\textohm
 \end{center}
-The biggest flaw with this method is that $V_{schottky}$ voltage is not accurate.
+The biggest flaw with this method is that $V_{schottky}$ voltage is not accurate. Another problem will be that achieving a resistance of 0.347\textohm \ will be very inaccurate.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Thermal analysis}
@@ -103,7 +103,7 @@ We want out current to be predictable and close to the value calculated, the hea
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[scale=0.18]{Figures/FinCirc.png}
+\includegraphics[scale=0.3]{Figures/FinCirc.png}
 \caption{Charging Circuit with high side switch implemented }
 \label{fig:circuit}
 \end{figure}
@@ -142,7 +142,7 @@ Switches are often used to control the flow of current within a circuit. In this
 
 
 
- When designing the switch the considerations taken into account was the fact that the PMOS can handle in excess of amps \cite{PMOS} whereas the NMOS can only handle 200mA\cite{NData}. For this reason the NMOS is used to switch the PMOS on. The way that this is achieved is by turning the NMOS on with a logic high of 5V, when the NMOS is on current flows through $R_1$ and $R_2$ (refer to figure \ref{fig:high}) and this causes there to be a voltage over the source and gate of the PMOS. This voltage needs to be greater than 4V and less than 20V in order for the PMOS to turn on and function without breaking \cite{PMOS}.The NMOS has a maximum threshold voltage of 3V. The 5V will enough to turn it on \cite{NMOS}. A resistor is also placed between the gate of the NMOS and ground to prevent the gate from floating. 
+ When designing the switch the considerations taken into account was the fact that the PMOS can handle in excess of amps \cite{PMOS} whereas the NMOS can only handle 200mA\cite{NData}. For this reason the NMOS is used to switch the PMOS on. The way that this is achieved is by turning the NMOS on with a logic high of 5V, when the NMOS is on current flows through $R_1$ and $R_2$ (refer to figure \ref{fig:high}) and this causes there to be a voltage over the source and gate of the PMOS. This voltage needs to be greater than 4V and less than 20V in order for the PMOS to turn on and function without breaking \cite{PMOS}.The NMOS has a maximum threshold voltage of 3V. The 5V will be enough to turn it on \cite{NMOS}. A resistor is also placed between the gate of the NMOS and ground to prevent the gate from floating. 
  
 \begin{itemize}
  \item To prevent current from the load from flowing back into the supply a schottky diode is placed in series with the load.
@@ -228,7 +228,7 @@ The fundamental design is the same as in section \ref{sec:high}, the only differ
 
 
 \begin{center}
-	$\frac{V_{TL}-V_{TU}}{(V_{H}-V_L)}=\frac{R_1}{R_2}$  
+	$\frac{V_{TU}-V_{TL}}{(V_{H}-V_L)}=\frac{R_1}{R_2}$  
 \end{center}
 
 \begin{center}
@@ -239,7 +239,7 @@ $	V_{REF}=\frac{V_{TL}\times (R_2)}{R_1+R_2}+\frac{V_{H}\times R_1}{R_1+R_2}$
 
 
 
-Using the above equations the $\frac{R_1}{R_2}$ ratio is found to be $\frac{1}{40}$.$R_2$ is chosen to be 190k\textohm which results in $R_1$= 4.75k\textohm. The closest lab resistor is 4.7k\textohm. With our resistor values now defined $V_{REF}$ can be calculated to be 3.78V.
+Using the above equations the $\frac{R_1}{R_2}$ ratio is found to be $\frac{1}{40}$.$R_2$ is chosen to be 190k\textohm which results in $R_1$= 4.75k\textohm. The closest lab resistor is 4.7k\textohm. With our resistor values now defined $V_{REF}$ can be calculated to be 3.78V. The relevant voltage division can be found in figure \ref{fig:under}
 
 
 
