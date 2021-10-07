@@ -27,6 +27,9 @@
 \contentsline {section}{\numberline {3.6}Low Side Switch and Load}{15}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Supply voltage measurement}{16}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Battery voltage measurement}{17}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Ambient light sensor circuitry}{18}{section.3.9}%
+\contentsline {section}{\numberline {3.10}LED load control design }{18}{section.3.10}%
+\contentsline {section}{\numberline {3.11}Pilot light control design}{18}{section.3.11}%
 \contentsline {chapter}{\numberline {4}Subsystem results}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Voltage regulation}{19}{section.4.1}%
 \contentsline {section}{\numberline {4.2}High side switch on supply side}{21}{section.4.2}%
