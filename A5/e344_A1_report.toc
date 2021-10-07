@@ -29,18 +29,18 @@
 \contentsline {section}{\numberline {3.8}Battery voltage measurement}{17}{section.3.8}%
 \contentsline {section}{\numberline {3.9}Ambient light sensor circuitry}{18}{section.3.9}%
 \contentsline {section}{\numberline {3.10}LED load control design }{18}{section.3.10}%
-\contentsline {section}{\numberline {3.11}Pilot light control design}{18}{section.3.11}%
-\contentsline {chapter}{\numberline {4}Subsystem results}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Voltage regulation}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}High side switch on supply side}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Undervoltage protection}{22}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Current sense}{23}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Low-side switch}{25}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Supply Voltage measurement}{26}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Battery Voltage measurement}{27}{section.4.7}%
-\contentsline {chapter}{\numberline {5}System results}{28}{chapter.5}%
-\contentsline {chapter}{Bibliography}{31}{chapter*.50}%
-\contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{34}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data sheet info}{35}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Hysterisis Calculations}{36}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Differential amplifier calculations}{38}{appendix.D}%
+\contentsline {subsection}{\numberline {3.10.1}Pilot light control design}{19}{subsection.3.10.1}%
+\contentsline {chapter}{\numberline {4}Subsystem results}{20}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Voltage regulation}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}High side switch on supply side}{22}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Undervoltage protection}{23}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Current sense}{24}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Low-side switch}{26}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Supply Voltage measurement}{27}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Battery Voltage measurement}{28}{section.4.7}%
+\contentsline {chapter}{\numberline {5}System results}{29}{chapter.5}%
+\contentsline {chapter}{Bibliography}{32}{chapter*.52}%
+\contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{35}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data sheet info}{36}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Hysterisis Calculations}{37}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Differential amplifier calculations}{39}{appendix.D}%

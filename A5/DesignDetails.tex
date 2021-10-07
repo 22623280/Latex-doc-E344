@@ -433,11 +433,40 @@ From table \ref{tab:MCPbat}, all op amps are operating within working ranges.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Ambient light sensor circuitry}
-The LDR will be used to produce a voltage that will fall within the boundary of zero to five volts in order to work correctly with an ADC. In direct sunlight the LDR had a resistance of as little as 500\textohm and in complete darkness a resistance of greater than 1M\textohm \ was measured.  To get a voltage between zero and five volts, the voltage from the 5V regulator is divided as \textbf{can be seen in figure \ref{fig:LDR}}. This means that unless the regulator exceeds its values the zero to five volt range of the LDR circuit will not be breached.
+The LDR will be used to produce a voltage that will fall within the boundary of zero to five volts in order to work correctly with an ADC when "measuring" the light. In direct sunlight the LDR had a resistance of as little as 500\textohm and in complete darkness a resistance of greater than 1M\textohm \ was measured.  To get a voltage between zero and five volts, the voltage from the 5V regulator is divided as can be seen in figure \ref{fig:LDR}. This means that unless the regulator exceeds its values the zero to five volt range of the LDR circuit will not be breached. In the labs the highest "light" measured LDR resistance is 15k\textohm. When we are at this point the ADC output is designed to have a voltage of 2.5V. This 2.5V will be used in the next section.
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.25\linewidth]{Figures/A7/LDRcirc.png}
+	\caption{Light measuring circuit}
+	\label{fig:LDR}
+\end{figure}
 
 \section{LED load control design }
 
-\section{Pilot light control design}
+The following design will consist of 
+
+
+\begin{table}[!htb]
+	\centering
+	\footnotesize
+	\caption[Truth table of load control]{Truth table of load control}
+	\begin{tabular}{lrrrr}
+		\toprule
+		$PWM$&$Load Control$&$Light Condition$&$Load LED$&$Pilot LED$\\
+		&[0-off/1-on]&[0-Light/1-Dark]&[0-off/1-on]&[0-off/1-on]&[0-off/1-on]\\
+		\midrule
+		1&0&0&0&0\\
+		1&0&1&0&1\\
+		1&1&0&0&0\\
+		1&1&1&1&0\\
+		\bottomrule
+	\end{tabular}
+	\label{tab:truthtab}
+\end{table}
+
+\subsection{Pilot light control design}
 
 
 

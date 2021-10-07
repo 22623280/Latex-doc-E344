@@ -5,18 +5,19 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Undervoltage circuit op amp requirements}}{12}{table.caption.21}%
 \contentsline {table}{\numberline {3.2}{\ignorespaces Battery voltage measurement circuit op amp requirements}}{18}{table.caption.27}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Truth table of load control}}{19}{table.caption.29}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Measured Values\relax }}{20}{table.caption.31}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Highside switch measurements\relax }}{21}{table.caption.33}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Under voltage circuit measurements\relax }}{22}{table.caption.35}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Voltage across resistors when LEDs are on\relax }}{23}{table.caption.37}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Measured results compared to actual results\relax }}{23}{table.caption.38}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Battery Measuring circuit measurements\relax }}{27}{table.caption.45}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Measured Values\relax }}{21}{table.caption.33}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Highside switch measurements\relax }}{22}{table.caption.35}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Under voltage circuit measurements\relax }}{23}{table.caption.37}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Voltage across resistors when LEDs are on\relax }}{24}{table.caption.39}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Measured results compared to actual results\relax }}{24}{table.caption.40}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Battery Measuring circuit measurements\relax }}{28}{table.caption.47}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Charging circuit measurements\relax }}{28}{table.caption.46}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Hysteresis Measurement\relax }}{28}{table.caption.47}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Charging circuit measurements\relax }}{29}{table.caption.48}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Hysteresis Measurement\relax }}{29}{table.caption.49}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Thermal Resistance Values}}{35}{table.caption.54}%
+\contentsline {table}{\numberline {B.1}{\ignorespaces Thermal Resistance Values}}{36}{table.caption.56}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
