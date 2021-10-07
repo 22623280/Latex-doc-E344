@@ -136,6 +136,58 @@ If $R_1=R_2$ and $R_3=R_4$ then the equation will simplify to :
 	V_{out}=\frac{R_3}{R_1}\times(V_2-V_1)
 \end{equation}
 
+\chapter{Pilot LED calculations}
+
+\label{appen:E}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.2\linewidth]{Figures/A7/V-main.png}
+	\caption{$V_-$ pilot LED calculations }
+	\label{fig:v-main}
+\end{figure}
 
 
+$R_{13}$ is chosen to be 180k\textohm. When the load control is high the following equation can be found:
+\begin{equation}
+	3.5=\frac{R_m}{R_{n}||180k+R_m}
+\end{equation}
+
+\begin{equation}
+	R_m=\frac{R_n\times 180k}{R_{n}+180k}\times \frac{3.5}{1.5}
+	\label{eq:rm}
+\end{equation}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.2\linewidth]{Figures/A7/5Vv-.png}
+	\caption{$V_-$ pilot LED calculations with load control on }
+	\label{fig:v-5v}
+\end{figure}
+
+
+
+When the load control is low the following equation can be found:
+\begin{equation}
+	0.4=\frac{R_x}{R_x+180k}
+\end{equation}
+$R_x=15650$\textohm \\
+Where $R_x$ is equal to $R_n$ in parallel with $R_m$:
+\begin{equation}
+	R_x=\frac{R_n\times R_m}{R_m+R_n}
+	\label{eq:rx}
+\end{equation}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.2\linewidth]{Figures/A7/0Vv-.png}
+	\caption{$V_-$ pilot LED calculations with load control off }
+	\label{fig:v-0v}
+\end{figure}
+
+If eq.\ref{eq:rm} is substituted into eq. \ref{eq:rx} $R_n$ can be solved for: 
+
+\begin{equation}
+	15650=\frac{\frac{R_n\times 180k}{R_{n}+180k}\times \frac{3.5}{1.5}\times R_n}{\frac{R_n\times 180k}{R_{n}+180k}\times \frac{3.5}{1.5}+R_n}
+\end{equation}
+$R_n$=23.22k\textohm (lab resistor of 22k\textohm) \\
+$R_m$=48k\textohm (lab resistor of 47k\textohm)
 

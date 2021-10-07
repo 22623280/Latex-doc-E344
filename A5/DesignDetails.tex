@@ -433,7 +433,7 @@ From table \ref{tab:MCPbat}, all op amps are operating within working ranges.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Ambient light sensor circuitry}
-The LDR will be used to produce a voltage that will fall within the boundary of zero to five volts in order to work correctly with an ADC when "measuring" the light. In direct sunlight the LDR had a resistance of as little as 500\textohm \ and in complete darkness a resistance of greater than 1M\textohm \ was measured.  To get a voltage between zero and five volts, the voltage from the 5V regulator is divided as can be seen in figure \ref{fig:LDR}. This means that unless the regulator exceeds its values the zero to five volt range of the LDR circuit will not be breached. In the labs the highest "light" measured LDR resistance is 15k\textohm. When we are at this point the ADC output is designed to have a voltage of 2.5V. This 2.5V will be used in the next section. As it gets darker the resistance of the LDR will increase and a greater voltage will be across it.
+The LDR will be used to produce a voltage that will fall within the boundary of zero to five volts in order to work correctly with an ADC when "measuring" the light. In direct sunlight the LDR had a resistance of as little as 500\textohm \ and in complete darkness a resistance of greater than 1M\textohm \ was measured.  To get a voltage between zero and five volts, the voltage from the 5V regulator is divided as can be seen in figure \ref{fig:LDR}. This means that unless the regulator exceeds its values the zero to five volt range of the LDR circuit will not be breached. In the labs the highest "light" measured LDR resistance is 15k\textohm. When we are at this point the ADC output is designed to have a voltage of 2.5V. This 2.5V will be used in the next section. As it gets darker the resistance and the voltage across the LDR will increase.
 
 
 \begin{figure}[!htb]
@@ -459,7 +459,7 @@ The following design will consist will achieve the output of the Load LED and pi
 Using the above equations for $V_H=5$ and $V_L=0$ ,$\frac{R_1}{R_2}=\frac{1}{25}$. With $R_2$ chosen as 12k\textohm ($R_1$ in figure \ref{fig:loadcont})\ $R_1$ will be 300k\textohm \ ($R_2+R_8$ in figure \ref{fig:loadcont}). $V_{REF}$ is then calculated to be 2.5V (5V voltage divided with $R_3$ and $R_4$ in figure \ref{fig:loadcont}).
 
 To achieve the one \textbf{on} condition for the load LED in table \ref{tab:truthtab} the \textbf{light condition} is sent to an NMOS gate that is in series with the lowside switch from section \ref{sec:loswide}. This then requires the "light condition" \textbf{and} load control to be high for current to flow through the load. The same concept is applied for the PWM signal. This can be seen in the load control part of figure \ref{fig:loadcont}.
- A momentary switch is implemented by using a op amp sr-latch \cite{difAmp}. The output of the SR latch is connected to the same output as the load control from section \ref{sec:loswide}. Diodes are connected between the two signals to prevent interference with the sr-latch This enables either the momentary switch or the beetle load control to enable the load control Mosfet, but current will only flow through the load if \textbf{light condtion} and PWM are also high. 
+ A momentary switch is implemented by using a op amp sr-latch \cite{SR2}. The output of the SR latch is connected to the same output as the load control from section \ref{sec:loswide}. Diodes are connected between the two signals to prevent interference with the sr-latch This enables either the momentary switch or the beetle load control to enable the load control Mosfet, but current will only flow through the load if \textbf{light condition} and PWM are also high. 
 
 
 
@@ -476,7 +476,7 @@ To achieve the one \textbf{on} condition for the load LED in table \ref{tab:trut
 	\caption[Truth table of pilot \& load control]{Truth table of pilot \& load control}
 	\begin{tabular}{lrrrr}
 		\toprule
-		$PWM$&$beetle oad Control$&$Light Condition$&$Load LED$&$Pilot LED$\\
+		$PWM$&$beetle \ load  \ Control$&$Light Condition$&$Load LED$&$Pilot LED$\\
 		
 		&[0-off/1-on]&[0-Light/1-Dark]&[0-off/1-on]&[0-off/1-on]&[0-off/1-on]\\
 		\midrule
@@ -493,10 +493,12 @@ To achieve the one \textbf{on} condition for the load LED in table \ref{tab:trut
 
 \subsection{Pilot light control design}
 
+This circuit will drive a red LED with an op amp in the case that the beetle load control is high and there is a "dark" light condition. This is achieved by using a op amp as a comparator. A Schmidt trigger is unnecessary because there will be fixed voltage-logic levels. 
 
+ $V_-$  oF U1 is designed to be 0.4V when the beetle load control is off, and 3.5V when the beetle load control is on (refer to appendix \ref{appen:E}). With this configuration making use of the equation $V_O=A_{OL}(V_+-V_-)$, when the load control is on $V_+$-$V_-$=(2.5-3.5) and therefore the output is 0. When the load control is off  $V_+$-$V_-$=(2.5-0.4) and therefore the output is 5V. And lastly when nothing is on  $V_+$-$V_-$=(0-0.4) and this results in an output of 0V.
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.45\linewidth]{Figures/A7/pilotLED.png}
+	\includegraphics[width=0.55\linewidth]{Figures/A7/pilotLED.png}
 	\caption{Pilot LED circuit}
 	\label{fig:pilot}
 \end{figure}
