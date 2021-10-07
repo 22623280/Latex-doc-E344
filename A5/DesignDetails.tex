@@ -431,7 +431,7 @@ $R_3$ is then chosen to be 100k\textohm. $R_1$ is the calculated to be 22.32k\te
 
 From table \ref{tab:MCPbat}, all op amps are operating within working ranges.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \section{Ambient light sensor circuitry}
 The LDR will be used to produce a voltage that will fall within the boundary of zero to five volts in order to work correctly with an ADC when "measuring" the light. In direct sunlight the LDR had a resistance of as little as 500\textohm and in complete darkness a resistance of greater than 1M\textohm \ was measured.  To get a voltage between zero and five volts, the voltage from the 5V regulator is divided as can be seen in figure \ref{fig:LDR}. This means that unless the regulator exceeds its values the zero to five volt range of the LDR circuit will not be breached. In the labs the highest "light" measured LDR resistance is 15k\textohm. When we are at this point the ADC output is designed to have a voltage of 2.5V. This 2.5V will be used in the next section.
 
@@ -445,7 +445,19 @@ The LDR will be used to produce a voltage that will fall within the boundary of 
 
 \section{LED load control design }
 
-The following design will consist of 
+The following design will consist will achieve the output of the Load LED and pilot LED that can be seen in table \ref{tab:truthtab}. This consists of defining a "dark" and "light" point for the LDR in the previous section. This is implemented with non inverting Schmidt trigger. The hysterisis band is designed to be 0.2V around the center voltage of 2.5V defined in the previous section ($V_{TU}$=2.6V ,$V_{TL}$=2.4V ).\textbf{The following equations are derived extensively alongside the used circuit in Appendix C}.
+
+\begin{center}
+	$\frac{V_{TU}-V_{TL}}{(V_{H}-V_L)}=\frac{R_1}{R_2}$  
+\end{center}
+
+\begin{center}
+	
+	$	V_{REF}=\frac{V_{TL}\times (R_2)}{R_1+R_2}+\frac{V_{H}\times R_1}{R_1+R_2}$
+\end{center}
+Using the above equations for $V_H=5$ and $V_L=0$ ,$\frac{R_1}{R_2}=\frac{1}{25}$. With $R_2$ chosen as 12k\textohm \ $R_1$ can will be 300k\textohm 
+
+To achieve the one \textbf{on} condition for the load LED in table \ref{tab:truthtab} the \textbf{light condition} is "anded" with the load control as well as the PWM signals  
 
 
 \begin{table}[!htb]
@@ -454,7 +466,7 @@ The following design will consist of
 	\caption[Truth table of load control]{Truth table of load control}
 	\begin{tabular}{lrrrr}
 		\toprule
-		$PWM$&$Load Control$&$Light Condition$&$Load LED$&$Pilot LED$\\
+		$PWM$&$beatle oad Control$&$Light Condition$&$Load LED$&$Pilot LED$\\
 		&[0-off/1-on]&[0-Light/1-Dark]&[0-off/1-on]&[0-off/1-on]&[0-off/1-on]\\
 		\midrule
 		1&0&0&0&0\\
@@ -465,6 +477,13 @@ The following design will consist of
 	\end{tabular}
 	\label{tab:truthtab}
 \end{table}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.38\linewidth]{Figures/A7/lightcondcirc.png}
+	\caption{Light condition circuit}
+	\label{fig:LDR}
+\end{figure}
 
 \subsection{Pilot light control design}
 
