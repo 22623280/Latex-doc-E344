@@ -387,9 +387,72 @@ From the results seen in figure \ref{subfig:voltbatA6} the ADC battery voltage i
 From figure \ref{fig:batrise} it can be seen that the rise time of channel 1 (ADC voltage) is practically instant and that the designed range is approximately achieved. Table \ref{tab:batmeas} represents the ADC voltage at the specific battery voltages and the error between the ADC voltage and the theoretical ADC voltage.
 
 
+\newpage
+\section{Ambient light sensor circuitry}
+
+\begin{figure}[!htb]
+	\begin{minipage}[b]{0.47\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{./Figures/A7/A7ldr.png}
+		\caption{LTSPICE LDR graphed simulation results}
+		\label{fig:by:table}
+	\end{minipage}%
+	\hfill%
+	\begin{minipage}[b]{0.47\textwidth}
+		\centering
+		\begin{tabular}{|c|c|} \hline
+			Light condition&ADC voltage \\
+		&  [V] \\ \hline\hline
+			Complete darkness&4.88   \\
+			Torch level 1-box elevate 2cm&3.42 \\
+			Torch level 1-box elevate 4cm&2.88 \\
+			Torch level 1-no box&1.6 \\
+			Torch level 3	&1.135 	\\
+			Torch level 5	&0.84 	\\  \hline
+		\end{tabular}
+		\tabcaption{LDR ADC measured results}
+		\label{tab:LDR}
+	\end{minipage}%
+\end{figure}
+
+To get the large range of measurements in table \ref{tab:LDR} a phone with five different torch brightness settings is held above the LDR and the ADC voltage is measured. Initially at "torch level 1" a box is placed over the LDR and the box is elevated in increments.  Then the box is removed and the torch brightness is increased. The simulated results do achieve a larger range than the practical results. This may be because exact conditions for "darkness" and "light" in the measurements were not achieved.
+ 
+ \section{LED Load control}
+ 
+ \begin{table}[!htb]
+ 	\centering
+ 	\footnotesize
+ 	\caption{Hysteresis Measurement of light condition circuit}
+ 	\begin{tabular}{lrrrr}
+ 		\toprule
+ 		& $Measured Voltage$&$Expected Voltage$ \\
+ 		&  [V]&[V] \\
+ 		\midrule
+ 		$V_{TU}$      &2.58&2.60  \\
+ 		$V_{TL}$     & 2.37&2.40\\
+ 		
+ 		\bottomrule
+ 	\end{tabular}
+ 	\label{tab:hyst meas_light}
+ \end{table}
 
 
 
 
-
+\begin{figure}[!htb]
+	\footnotesize
+	\centering
+	\begin{subfigure}[]{0.386\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./Figures/A7/A72loadcontsim.png}
+		\caption{} \label{subfig:A7voltages}
+	\end{subfigure}
+	\begin{subfigure}[]{0.46\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./Figures/A7/A72loadcontsimcurr.png}
+		\caption{ } \label{subfig:A7current}
+	\end{subfigure}
+	\caption[{LTSPICE Load Control results}]{LTSPICE Load Control results   (a)  Voltages relevant to load control (b)Current through load }
+	\label{fig:loadcontA7}
+\end{figure}
 

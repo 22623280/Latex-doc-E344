@@ -15,6 +15,13 @@
 \newcommand{\signature}{frontmatter/fig/sig}   %Upload your signature as "frontmatter/fig/Signature.png"
 
 
+\usepackage{graphicx}
+
+\makeatletter
+\newcommand\tabcaption{\def\@captype{table}\caption}
+\newcommand\figcaption{\def\@captype{figure}\caption}
+\makeatother
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %From here you can ignore up to \begin{document} (line 107)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,6 +113,8 @@
 \patchcmd{\ttlh@hang}{\noindent}{}{}{}
 \makeatother
  \usepackage[normalem]{ulem}
+ 
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Ignore up to here. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
