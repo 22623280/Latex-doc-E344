@@ -47,3 +47,4 @@
 \contentsline {chapter}{\numberline {C}Hysterisis Calculations}{40}{appendix.C}%
 \contentsline {chapter}{\numberline {D}Differential amplifier calculations}{42}{appendix.D}%
 \contentsline {chapter}{\numberline {E}Pilot LED calculations}{43}{appendix.E}%
+\contentsline {chapter}{\numberline {F}Load control and pilot LED op amp voltages}{45}{appendix.F}%

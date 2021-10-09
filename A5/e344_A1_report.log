@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.30)  8 OCT 2021 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.30)  9 OCT 2021 10:33
 entering extended mode
 **./e344_A1_report.tex
 (e344_A1_report.tex
@@ -648,7 +648,11 @@ LaTeX Warning: Label `fig:two' multiply defined.
 
 LaTeX Warning: Label `fig:A6bat' multiply defined.
 
-) (SystemResults.aux) (App-A.aux) (App-B.aux))
+) (SystemResults.aux) (App-A.aux) (App-B.aux
+
+LaTeX Warning: Label `tab:MCPbat' multiply defined.
+
+))
 \openout1 = `e344_A1_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
@@ -669,8 +673,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
 LaTeX Font Info:    ... okay on input line 122.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
 LaTeX Font Info:    ... okay on input line 122.
-
-(G:\Programs\miktex\tex/context/base/mkii\supp-pdf.mkii
+ (G:\Programs\miktex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count327
 \scratchdimen=\dimen270
@@ -792,7 +795,7 @@ LaTeX Info: Redefining \nameref on input line 122.
 \openout3 = `e344_A1_report.out'.
 
  (frontmatter/skripsie_title_page.tex
-<USlogo-top.pdf, id=195, 560.0925pt x 183.68625pt>
+<USlogo-top.pdf, id=199, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 7.
@@ -866,7 +869,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
  (Literature.tex
 Chapter 1.
-<Figures/MPPT.png, id=556, 500.62032pt x 261.22594pt>
+<Figures/MPPT.png, id=565, 500.62032pt x 261.22594pt>
 File: Figures/MPPT.png Graphic file (type png)
 <use Figures/MPPT.png>
 Package pdftex.def Info: Figures/MPPT.png  used on input line 20.
@@ -887,13 +890,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 39.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 39.
-<Figures/cc.jpg, id=576, 323.70938pt x 314.67563pt>
+<Figures/cc.jpg, id=585, 323.70938pt x 314.67563pt>
 File: Figures/cc.jpg Graphic file (type jpg)
 <use Figures/cc.jpg>
 Package pdftex.def Info: Figures/cc.jpg  used on input line 69.
 (pdftex.def)             Requested size: 129.48145pt x 125.86801pt.
  [2 <./Figures/cc.jpg>]
-<Figures/fig2.png, id=595, 445.665pt x 219.82124pt>
+<Figures/fig2.png, id=604, 445.665pt x 219.82124pt>
 File: Figures/fig2.png Graphic file (type png)
 <use Figures/fig2.png>
 Package pdftex.def Info: Figures/fig2.png  used on input line 84.
@@ -910,12 +913,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--87
 ac-ity [[][]15[][]].
  []
 
-<./Figures/temperature.png, id=602, 444.91219pt x 306.39468pt>
+<./Figures/temperature.png, id=611, 444.91219pt x 306.39468pt>
 File: ./Figures/temperature.png Graphic file (type png)
 <use ./Figures/temperature.png>
 Package pdftex.def Info: ./Figures/temperature.png  used on input line 102.
 (pdftex.def)             Requested size: 198.37183pt x 136.60934pt.
-<./Figures/c-t.png, id=603, 377.15906pt x 389.95688pt>
+<./Figures/c-t.png, id=612, 377.15906pt x 389.95688pt>
 File: ./Figures/c-t.png Graphic file (type png)
 <use ./Figures/c-t.png>
 Package pdftex.def Info: ./Figures/c-t.png  used on input line 107.
@@ -926,12 +929,12 @@ Package pdftex.def Info: ./Figures/c-t.png  used on input line 107.
 
 (SystemDesign.tex
 Chapter 2.
-<./Figures/A2.png, id=622, 543.02875pt x 91.34125pt>
+<./Figures/A2.png, id=631, 543.02875pt x 91.34125pt>
 File: ./Figures/A2.png Graphic file (type png)
 <use ./Figures/A2.png>
 Package pdftex.def Info: ./Figures/A2.png  used on input line 8.
 (pdftex.def)             Requested size: 271.5137pt x 45.6705pt.
-<./Figures/A3.png, id=624, 603.25375pt x 172.645pt>
+<./Figures/A3.png, id=633, 603.25375pt x 172.645pt>
 File: ./Figures/A3.png Graphic file (type png)
 <use ./Figures/A3.png>
 Package pdftex.def Info: ./Figures/A3.png  used on input line 19.
@@ -942,7 +945,7 @@ Package pdftex.def Info: ./Figures/A3.png  used on input line 19.
 
 
  <./Figures/A2.png> <./Figures/A3.png>]
-<./Figures/A5.png, id=632, 1044.90375pt x 261.97874pt>
+<./Figures/A5.png, id=641, 1044.90375pt x 261.97874pt>
 File: ./Figures/A5.png Graphic file (type png)
 <use ./Figures/A5.png>
 Package pdftex.def Info: ./Figures/A5.png  used on input line 33.
@@ -959,17 +962,17 @@ Chapter 3.
 
 
 ]
-<Figures/temp.png, id=659, 469.755pt x 454.69875pt>
+<Figures/temp.png, id=668, 469.755pt x 454.69875pt>
 File: Figures/temp.png Graphic file (type png)
 <use Figures/temp.png>
 Package pdftex.def Info: Figures/temp.png  used on input line 63.
 (pdftex.def)             Requested size: 93.94933pt x 90.93813pt.
-<Figures/FinCirc.png, id=668, 1057.70157pt x 406.51875pt>
+<Figures/FinCirc.png, id=677, 1057.70157pt x 406.51875pt>
 File: Figures/FinCirc.png Graphic file (type png)
 <use Figures/FinCirc.png>
 Package pdftex.def Info: Figures/FinCirc.png  used on input line 106.
 (pdftex.def)             Requested size: 317.31291pt x 121.95656pt.
-<Figures/mosfetX.jpg, id=670, 333.49594pt x 253.69781pt>
+<Figures/mosfetX.jpg, id=679, 333.49594pt x 253.69781pt>
 File: Figures/mosfetX.jpg Graphic file (type jpg)
 <use Figures/mosfetX.jpg>
 Package pdftex.def Info: Figures/mosfetX.jpg  used on input line 118.
@@ -987,37 +990,37 @@ be seen in fig-ure [][]3.3[][].
  []
 
 [7 <./Figures/temp.png>]
-<./Figures/PMOS.png, id=682, 602.25pt x 521.95pt>
+<./Figures/PMOS.png, id=691, 602.25pt x 521.95pt>
 File: ./Figures/PMOS.png Graphic file (type png)
 <use ./Figures/PMOS.png>
 Package pdftex.def Info: ./Figures/PMOS.png  used on input line 130.
 (pdftex.def)             Requested size: 129.8876pt x 112.56749pt.
-<./Figures/NMOS.jpg, id=683, 289.08pt x 277.9986pt>
+<./Figures/NMOS.jpg, id=692, 289.08pt x 277.9986pt>
 File: ./Figures/NMOS.jpg Graphic file (type jpg)
 <use ./Figures/NMOS.jpg>
 Package pdftex.def Info: ./Figures/NMOS.jpg  used on input line 135.
 (pdftex.def)             Requested size: 113.35524pt x 109.00864pt.
  [8 <./Figures/FinCirc.png> <./Figures/mosfetX.jpg> <./Figures/PMOS.png> <./Fig
 ures/NMOS.jpg>]
-<Figures/Highside.png, id=705, 612.78937pt x 540.51938pt>
+<Figures/Highside.png, id=714, 612.78937pt x 540.51938pt>
 File: Figures/Highside.png Graphic file (type png)
 <use Figures/Highside.png>
 Package pdftex.def Info: Figures/Highside.png  used on input line 174.
 (pdftex.def)             Requested size: 171.57985pt x 151.34439pt.
  [9 <./Figures/Highside.png>] [10]
-<./Figures/hyst.png, id=724, 774.895pt x 302.12875pt>
+<./Figures/hyst.png, id=733, 774.895pt x 302.12875pt>
 File: ./Figures/hyst.png Graphic file (type png)
 <use ./Figures/hyst.png>
 Package pdftex.def Info: ./Figures/hyst.png  used on input line 198.
 (pdftex.def)             Requested size: 154.97626pt x 60.42467pt.
 
 [11 <./Figures/hyst.png>]
-<./Figures/schmidt.png, id=747, 600.2425pt x 204.765pt>
+<./Figures/schmidt.png, id=756, 600.2425pt x 204.765pt>
 File: ./Figures/schmidt.png Graphic file (type png)
 <use ./Figures/schmidt.png>
 Package pdftex.def Info: ./Figures/schmidt.png  used on input line 221.
 (pdftex.def)             Requested size: 300.12051pt x 102.38223pt.
-<./Figures/undervoltage.png, id=753, 765.6103pt x 360.59718pt>
+<./Figures/undervoltage.png, id=762, 765.6103pt x 360.59718pt>
 File: ./Figures/undervoltage.png Graphic file (type png)
 <use ./Figures/undervoltage.png>
 Package pdftex.def Info: ./Figures/undervoltage.png  used on input line 248.
@@ -1027,42 +1030,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
-<./Figures/A4circ.png, id=784, 876.27374pt x 367.3725pt>
+<./Figures/A4circ.png, id=793, 876.27374pt x 367.3725pt>
 File: ./Figures/A4circ.png Graphic file (type png)
 <use ./Figures/A4circ.png>
 Package pdftex.def Info: ./Figures/A4circ.png  used on input line 307.
 (pdftex.def)             Requested size: 198.37183pt x 83.16534pt.
-<./Figures/currentSense.png, id=785, 852.93657pt x 438.8897pt>
+<./Figures/currentSense.png, id=794, 852.93657pt x 438.8897pt>
 File: ./Figures/currentSense.png Graphic file (type png)
 <use ./Figures/currentSense.png>
 Package pdftex.def Info: ./Figures/currentSense.png  used on input line 312.
 (pdftex.def)             Requested size: 236.15797pt x 121.51541pt.
 [14 <./Figures/A4circ.png> <./Figures/currentSense.png>]
-<Figures/loadCircuit.png, id=797, 704.6325pt x 578.16pt>
+<Figures/loadCircuit.png, id=806, 704.6325pt x 578.16pt>
 File: Figures/loadCircuit.png Graphic file (type png)
 <use Figures/loadCircuit.png>
 Package pdftex.def Info: Figures/loadCircuit.png  used on input line 334.
 (pdftex.def)             Requested size: 188.9235pt x 155.01135pt.
  [15 <./Figures/loadCircuit.png>]
-<Figures/A6/Supsig.jpg, id=805, 374.14781pt x 274.02374pt>
+<Figures/A6/Supsig.jpg, id=814, 374.14781pt x 274.02374pt>
 File: Figures/A6/Supsig.jpg Graphic file (type jpg)
 <use Figures/A6/Supsig.jpg>
 Package pdftex.def Info: Figures/A6/Supsig.jpg  used on input line 359.
 (pdftex.def)             Requested size: 122.79955pt x 89.9389pt.
  [16 <./Figures/A6/Supsig.jpg>]
-<Figures/A6/difamp.jpg, id=812, 470.50781pt x 308.65312pt>
+<Figures/A6/difamp.jpg, id=821, 470.50781pt x 308.65312pt>
 File: Figures/A6/difamp.jpg Graphic file (type jpg)
 <use Figures/A6/difamp.jpg>
 Package pdftex.def Info: Figures/A6/difamp.jpg  used on input line 374.
 (pdftex.def)             Requested size: 127.52731pt x 83.6577pt.
-<Figures/A6/Batterysig.jpg, id=821, 995.97093pt x 570.63188pt>
+<Figures/A6/Batterysig.jpg, id=830, 995.97093pt x 570.63188pt>
 File: Figures/A6/Batterysig.jpg Graphic file (type jpg)
 <use Figures/A6/Batterysig.jpg>
 Package pdftex.def Info: Figures/A6/Batterysig.jpg  used on input line 399.
 (pdftex.def)             Requested size: 236.15797pt x 135.3001pt.
  [17 <./Figures/A6/difamp.jpg>]
 [18 <./Figures/A6/Batterysig.jpg>]
-<Figures/A7/LDRcirc.png, id=836, 211.54031pt x 187.45032pt>
+<Figures/A7/LDRcirc.png, id=845, 211.54031pt x 187.45032pt>
 File: Figures/A7/LDRcirc.png Graphic file (type png)
 <use Figures/A7/LDRcirc.png>
 Package pdftex.def Info: Figures/A7/LDRcirc.png  used on input line 441.
@@ -1072,7 +1075,7 @@ Package pdftex.def Info: Figures/A7/LDRcirc.png  used on input line 441.
 LaTeX Warning: Citation `SR2' on page 19 undefined on input line 462.
 
 [19 <./Figures/A7/LDRcirc.png>]
-<Figures/A7/loadcont.png, id=850, 893.58844pt x 250.68657pt>
+<Figures/A7/loadcont.png, id=859, 893.58844pt x 250.68657pt>
 File: Figures/A7/loadcont.png Graphic file (type png)
 <use Figures/A7/loadcont.png>
 Package pdftex.def Info: Figures/A7/loadcont.png  used on input line 468.
@@ -1087,7 +1090,7 @@ You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
-<Figures/A7/pilotLED.png, id=852, 594.72188pt x 222.8325pt>
+<Figures/A7/pilotLED.png, id=861, 594.72188pt x 222.8325pt>
 File: Figures/A7/pilotLED.png Graphic file (type png)
 <use Figures/A7/pilotLED.png>
 Package pdftex.def Info: Figures/A7/pilotLED.png  used on input line 501.
@@ -1097,22 +1100,22 @@ Package pdftex.def Info: Figures/A7/pilotLED.png  used on input line 501.
 
  (Results.tex
 Chapter 4.
-<./Figures/A2-1.png, id=859, 433.62pt x 289.08pt>
+<./Figures/A2-1.png, id=869, 433.62pt x 289.08pt>
 File: ./Figures/A2-1.png Graphic file (type png)
 <use ./Figures/A2-1.png>
 Package pdftex.def Info: ./Figures/A2-1.png  used on input line 10.
 (pdftex.def)             Requested size: 198.37183pt x 132.2506pt.
-<./Figures/A2-2.png, id=860, 433.62pt x 289.08pt>
+<./Figures/A2-2.png, id=870, 433.62pt x 289.08pt>
 File: ./Figures/A2-2.png Graphic file (type png)
 <use ./Figures/A2-2.png>
 Package pdftex.def Info: ./Figures/A2-2.png  used on input line 15.
 (pdftex.def)             Requested size: 198.37183pt x 132.2506pt.
-<./Figures/A2-3.png, id=862, 433.62pt x 289.08pt>
+<./Figures/A2-3.png, id=872, 433.62pt x 289.08pt>
 File: ./Figures/A2-3.png Graphic file (type png)
 <use ./Figures/A2-3.png>
 Package pdftex.def Info: ./Figures/A2-3.png  used on input line 29.
 (pdftex.def)             Requested size: 198.37183pt x 132.2506pt.
-<./Figures/A2-4.png, id=863, 433.62pt x 289.08pt>
+<./Figures/A2-4.png, id=873, 433.62pt x 289.08pt>
 File: ./Figures/A2-4.png Graphic file (type png)
 <use ./Figures/A2-4.png>
 Package pdftex.def Info: ./Figures/A2-4.png  used on input line 34.
@@ -1124,40 +1127,40 @@ Package pdftex.def Info: ./Figures/A2-4.png  used on input line 34.
 
  <./Figures/A2-1.png> <./Figures/A2-2.png> <./Figures/A2-3.png> <./Figures/A2-4
 .png>]
-<./Figures/A2-5.png, id=874, 433.62pt x 289.08pt>
+<./Figures/A2-5.png, id=884, 433.62pt x 289.08pt>
 File: ./Figures/A2-5.png Graphic file (type png)
 <use ./Figures/A2-5.png>
 Package pdftex.def Info: ./Figures/A2-5.png  used on input line 50.
 (pdftex.def)             Requested size: 198.37183pt x 132.2506pt.
-<./Figures/A2-6.png, id=875, 433.62pt x 289.08pt>
+<./Figures/A2-6.png, id=885, 433.62pt x 289.08pt>
 File: ./Figures/A2-6.png Graphic file (type png)
 <use ./Figures/A2-6.png>
 Package pdftex.def Info: ./Figures/A2-6.png  used on input line 55.
 (pdftex.def)             Requested size: 198.37183pt x 132.2506pt.
  [22 <./Figures/A2-5.png> <./Figures/A2-6.png>]
-<Figures/A1.png, id=886, 867.24pt x 361.35pt>
+<Figures/A1.png, id=896, 867.24pt x 361.35pt>
 File: Figures/A1.png Graphic file (type png)
 <use Figures/A1.png>
 Package pdftex.def Info: Figures/A1.png  used on input line 97.
 (pdftex.def)             Requested size: 377.85419pt x 157.4396pt.
  [23 <./Figures/A1.png>]
-<./Figures/A31.png, id=895, 433.62pt x 289.08pt>
+<./Figures/A31.png, id=905, 433.62pt x 289.08pt>
 File: ./Figures/A31.png Graphic file (type png)
 <use ./Figures/A31.png>
 Package pdftex.def Info: ./Figures/A31.png  used on input line 130.
 (pdftex.def)             Requested size: 212.54073pt x 141.69453pt.
-<./Figures/A32.png, id=896, 433.62pt x 289.08pt>
+<./Figures/A32.png, id=906, 433.62pt x 289.08pt>
 File: ./Figures/A32.png Graphic file (type png)
 <use ./Figures/A32.png>
 Package pdftex.def Info: ./Figures/A32.png  used on input line 135.
 (pdftex.def)             Requested size: 212.54073pt x 141.69453pt.
  [24 <./Figures/A31.png> <./Figures/A32.png>]
-<./Figures/circuit.png, id=905, 414.72656pt x 259.96552pt>
+<./Figures/circuit.png, id=915, 414.72656pt x 259.96552pt>
 File: ./Figures/circuit.png Graphic file (type png)
 <use ./Figures/circuit.png>
 Package pdftex.def Info: ./Figures/circuit.png  used on input line 188.
 (pdftex.def)             Requested size: 226.70963pt x 142.10878pt.
-<./Figures/noise.png, id=906, 433.62pt x 289.08pt>
+<./Figures/noise.png, id=916, 433.62pt x 289.08pt>
 File: ./Figures/noise.png Graphic file (type png)
 <use ./Figures/noise.png>
 Package pdftex.def Info: ./Figures/noise.png  used on input line 193.
@@ -1168,12 +1171,12 @@ Overfull \hbox (31.32277pt too wide) in paragraph at lines 232--246
  []
 
 [25 <./Figures/circuit.png> <./Figures/noise.png>] [26]
-<./Figures/NMOS.png, id=923, 433.62pt x 289.08pt>
+<./Figures/NMOS.png, id=933, 433.62pt x 289.08pt>
 File: ./Figures/NMOS.png Graphic file (type png)
 <use ./Figures/NMOS.png>
 Package pdftex.def Info: ./Figures/NMOS.png  used on input line 264.
 (pdftex.def)             Requested size: 198.37183pt x 132.2506pt.
-<./Figures/circNMOS.png, id=924, 240.14719pt x 248.42813pt>
+<./Figures/circNMOS.png, id=934, 240.14719pt x 248.42813pt>
 File: ./Figures/circNMOS.png Graphic file (type png)
 <use ./Figures/circNMOS.png>
 Package pdftex.def Info: ./Figures/circNMOS.png  used on input line 269.
@@ -1182,29 +1185,29 @@ Package pdftex.def Info: ./Figures/circNMOS.png  used on input line 269.
 
 LaTeX Warning: Reference `fig:meas' on page 27 undefined on input line 275.
 
-<./Figures/NMOSmeas.png, id=926, 433.62pt x 289.08pt>
+<./Figures/NMOSmeas.png, id=936, 433.62pt x 289.08pt>
 File: ./Figures/NMOSmeas.png Graphic file (type png)
 <use ./Figures/NMOSmeas.png>
 Package pdftex.def Info: ./Figures/NMOSmeas.png  used on input line 280.
 (pdftex.def)             Requested size: 260.17401pt x 173.44933pt.
 [27 <./Figures/NMOS.png> <./Figures/circNMOS.png> <./Figures/NMOSmeas.png>]
-<./Figures/A6/A6supcurrent.png, id=936, 413.28116pt x 271.7352pt>
+<./Figures/A6/A6supcurrent.png, id=946, 413.28116pt x 271.7352pt>
 File: ./Figures/A6/A6supcurrent.png Graphic file (type png)
 <use ./Figures/A6/A6supcurrent.png>
 Package pdftex.def Info: ./Figures/A6/A6supcurrent.png  used on input line 297.
 
 (pdftex.def)             Requested size: 226.70963pt x 149.06505pt.
-<./Figures/A6/A6supnoise.png, id=937, 381.27588pt x 256.35202pt>
+<./Figures/A6/A6supnoise.png, id=947, 381.27588pt x 256.35202pt>
 File: ./Figures/A6/A6supnoise.png Graphic file (type png)
 <use ./Figures/A6/A6supnoise.png>
 Package pdftex.def Info: ./Figures/A6/A6supnoise.png  used on input line 302.
 (pdftex.def)             Requested size: 226.70963pt x 152.43158pt.
-<./Figures/A6/noisesup.jpg, id=941, 232.61906pt x 160.34906pt>
+<./Figures/A6/noisesup.jpg, id=951, 232.61906pt x 160.34906pt>
 File: ./Figures/A6/noisesup.jpg Graphic file (type jpg)
 <use ./Figures/A6/noisesup.jpg>
 Package pdftex.def Info: ./Figures/A6/noisesup.jpg  used on input line 319.
 (pdftex.def)             Requested size: 188.9235pt x 130.2319pt.
-<./Figures/A6/risesup.jpg, id=942, 239.39438pt x 156.585pt>
+<./Figures/A6/risesup.jpg, id=952, 239.39438pt x 156.585pt>
 File: ./Figures/A6/risesup.jpg Graphic file (type jpg)
 <use ./Figures/A6/risesup.jpg>
 Package pdftex.def Info: ./Figures/A6/risesup.jpg  used on input line 324.
@@ -1212,25 +1215,25 @@ Package pdftex.def Info: ./Figures/A6/risesup.jpg  used on input line 324.
 
 [28 <./Figures/A6/A6supcurrent.png> <./Figures/A6/A6supnoise.png> <./Figures/A6
 /noisesup.jpg> <./Figures/A6/risesup.jpg>]
-<./Figures/A6/A6batvolt.png, id=951, 364.55052pt x 275.03897pt>
+<./Figures/A6/A6batvolt.png, id=961, 364.55052pt x 275.03897pt>
 File: ./Figures/A6/A6batvolt.png Graphic file (type png)
 <use ./Figures/A6/A6batvolt.png>
 Package pdftex.def Info: ./Figures/A6/A6batvolt.png  used on input line 343.
 (pdftex.def)             Requested size: 182.3147pt x 137.54851pt.
-<./Figures/A6/A6batcurrent.png, id=952, 433.62pt x 289.08pt>
+<./Figures/A6/A6batcurrent.png, id=962, 433.62pt x 289.08pt>
 File: ./Figures/A6/A6batcurrent.png Graphic file (type png)
 <use ./Figures/A6/A6batcurrent.png>
 Package pdftex.def Info: ./Figures/A6/A6batcurrent.png  used on input line 348.
 
 (pdftex.def)             Requested size: 217.2685pt x 144.8484pt.
-<./Figures/A6/batmeas.png, id=954, 371.4678pt x 260.79146pt>
+<./Figures/A6/batmeas.png, id=964, 371.4678pt x 260.79146pt>
 File: ./Figures/A6/batmeas.png Graphic file (type png)
 <use ./Figures/A6/batmeas.png>
 Package pdftex.def Info: ./Figures/A6/batmeas.png  used on input line 362.
 (pdftex.def)             Requested size: 167.15897pt x 117.35506pt.
  [29 <./Figures/A6/A6batvolt.png> <./Figures/A6/A6batcurrent.png> <./Figures/A6
 /batmeas.png>]
-<./Figures/A7/A7ldr.png, id=964, 433.62pt x 289.08pt>
+<./Figures/A7/A7ldr.png, id=974, 433.62pt x 289.08pt>
 File: ./Figures/A7/A7ldr.png Graphic file (type png)
 <use ./Figures/A7/A7ldr.png>
 Package pdftex.def Info: ./Figures/A7/A7ldr.png  used on input line 396.
@@ -1240,20 +1243,20 @@ Overfull \hbox (22.04718pt too wide) in paragraph at lines 403--413
  [][] 
  []
 
-<./Figures/A7/A72digitallight.png, id=966, 433.62pt x 289.08pt>
+<./Figures/A7/A72digitallight.png, id=976, 433.62pt x 289.08pt>
 File: ./Figures/A7/A72digitallight.png Graphic file (type png)
 <use ./Figures/A7/A72digitallight.png>
 Package pdftex.def Info: ./Figures/A7/A72digitallight.png  used on input line 4
 25.
 (pdftex.def)             Requested size: 208.13524pt x 138.75682pt.
 [30 <./Figures/A7/A7ldr.png> <./Figures/A7/A72digitallight.png>]
-<./Figures/A7/A72loadcontsim.png, id=975, 433.62pt x 289.08pt>
+<./Figures/A7/A72loadcontsim.png, id=985, 433.62pt x 289.08pt>
 File: ./Figures/A7/A72loadcontsim.png Graphic file (type png)
 <use ./Figures/A7/A72loadcontsim.png>
 Package pdftex.def Info: ./Figures/A7/A72loadcontsim.png  used on input line 46
 0.
 (pdftex.def)             Requested size: 217.2685pt x 144.8484pt.
-<./Figures/A7/A72loadcontsimcurr.png, id=976, 433.62pt x 289.08pt>
+<./Figures/A7/A72loadcontsimcurr.png, id=986, 433.62pt x 289.08pt>
 File: ./Figures/A7/A72loadcontsimcurr.png Graphic file (type png)
 <use ./Figures/A7/A72loadcontsimcurr.png>
 Package pdftex.def Info: ./Figures/A7/A72loadcontsimcurr.png  used on input lin
@@ -1284,17 +1287,17 @@ So I'll assume that you meant to type \cr instead.
 
 (SystemResults.tex
 Chapter 5.
-<./Figures/chargePMOSmeas.png, id=993, 433.62pt x 289.08pt>
+<./Figures/chargePMOSmeas.png, id=1003, 433.62pt x 289.08pt>
 File: ./Figures/chargePMOSmeas.png Graphic file (type png)
 <use ./Figures/chargePMOSmeas.png>
 Package pdftex.def Info: ./Figures/chargePMOSmeas.png  used on input line 55.
 (pdftex.def)             Requested size: 226.70963pt x 151.1429pt.
-<./Figures/NMOSTSCmeas.png, id=994, 433.62pt x 289.08pt>
+<./Figures/NMOSTSCmeas.png, id=1004, 433.62pt x 289.08pt>
 File: ./Figures/NMOSTSCmeas.png Graphic file (type png)
 <use ./Figures/NMOSTSCmeas.png>
 Package pdftex.def Info: ./Figures/NMOSTSCmeas.png  used on input line 60.
 (pdftex.def)             Requested size: 226.70963pt x 151.1429pt.
-<Figures/numx.png, id=996, 454.0965pt x 704.3916pt>
+<Figures/numx.png, id=1006, 454.0965pt x 704.3916pt>
 File: Figures/numx.png Graphic file (type png)
 <use Figures/numx.png>
 Package pdftex.def Info: Figures/numx.png  used on input line 72.
@@ -1320,7 +1323,7 @@ Underfull \hbox (badness 1803) in paragraph at lines 84--88
 
  (App-A.tex
 Appendix A.
-<./Figures/gitHub.png, id=1081, 947.79094pt x 345.54094pt>
+<./Figures/gitHub.png, id=1091, 947.79094pt x 345.54094pt>
 File: ./Figures/gitHub.png Graphic file (type png)
 <use ./Figures/gitHub.png>
 Package pdftex.def Info: ./Figures/gitHub.png  used on input line 8.
@@ -1338,12 +1341,12 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 8--10
 
  (App-B.tex
 Appendix B.
-<./Figures/datasheet.png, id=1088, 640.64343pt x 510.40688pt>
+<./Figures/datasheet.png, id=1098, 640.64343pt x 510.40688pt>
 File: ./Figures/datasheet.png Graphic file (type png)
 <use ./Figures/datasheet.png>
 Package pdftex.def Info: ./Figures/datasheet.png  used on input line 5.
 (pdftex.def)             Requested size: 320.32092pt x 255.2028pt.
-<Figures/circuitSTM.png, id=1089, 483.8075pt x 242.9075pt>
+<Figures/circuitSTM.png, id=1099, 483.8075pt x 242.9075pt>
 File: Figures/circuitSTM.png Graphic file (type png)
 <use Figures/circuitSTM.png>
 Package pdftex.def Info: Figures/circuitSTM.png  used on input line 13.
@@ -1367,7 +1370,7 @@ File: Figures/A6/difamp.jpg Graphic file (type jpg)
 <use Figures/A6/difamp.jpg>
 Package pdftex.def Info: Figures/A6/difamp.jpg  used on input line 121.
 (pdftex.def)             Requested size: 188.9235pt x 123.93472pt.
-<Figures/A6/derive.png, id=1138, 364.36125pt x 480.29437pt>
+<Figures/A6/derive.png, id=1148, 364.36125pt x 480.29437pt>
 File: Figures/A6/derive.png Graphic file (type png)
 <use Figures/A6/derive.png>
 Package pdftex.def Info: Figures/A6/derive.png  used on input line 128.
@@ -1376,27 +1379,31 @@ Package pdftex.def Info: Figures/A6/derive.png  used on input line 128.
 
  <./Figures/A6/derive.png>]
 Appendix E.
-<Figures/A7/V-main.png, id=1147, 280.79906pt x 168.63pt>
+<Figures/A7/V-main.png, id=1157, 280.79906pt x 168.63pt>
 File: Figures/A7/V-main.png Graphic file (type png)
 <use Figures/A7/V-main.png>
 Package pdftex.def Info: Figures/A7/V-main.png  used on input line 145.
 (pdftex.def)             Requested size: 94.46175pt x 56.72618pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 146.
-<Figures/A7/5Vv-.png, id=1148, 190.46156pt x 216.05719pt>
+<Figures/A7/5Vv-.png, id=1158, 190.46156pt x 216.05719pt>
 File: Figures/A7/5Vv-.png Graphic file (type png)
 <use Figures/A7/5Vv-.png>
 Package pdftex.def Info: Figures/A7/5Vv-.png  used on input line 162.
 (pdftex.def)             Requested size: 94.46175pt x 107.15466pt.
-<Figures/A7/0Vv-.png, id=1149, 156.585pt x 231.86626pt>
+<Figures/A7/0Vv-.png, id=1159, 156.585pt x 231.86626pt>
 File: Figures/A7/0Vv-.png Graphic file (type png)
 <use Figures/A7/0Vv-.png>
 Package pdftex.def Info: Figures/A7/0Vv-.png  used on input line 181.
 (pdftex.def)             Requested size: 94.46175pt x 139.88148pt.
 [43
 
- <./Figures/A7/V-main.png> <./Figures/A7/5Vv-.png>]) [44 <./Figures/A7/0Vv-.png
->]
+ <./Figures/A7/V-main.png> <./Figures/A7/5Vv-.png>] [44 <./Figures/A7/0Vv-.png>
+]
+Appendix F.
+) [45
+
+]
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 105.
 See the caption package documentation for explanation.
@@ -1410,14 +1417,14 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `e344_A1_report.out' has not changed.
-(rerunfilecheck)             Checksum: BAFC38E7AF0E3D23E8C71828EB20429F;7912.
+(rerunfilecheck)             Checksum: AB7CC834553BDB02278417F8885D0389;8188.
  ) 
 Here is how much of TeX's memory you used:
- 21845 strings out of 478927
- 391564 string characters out of 2864781
- 814516 words of memory out of 3000000
- 38762 multiletter control sequences out of 15000+600000
- 489930 words of font info for 200 fonts, out of 8000000 for 9000
+ 21856 strings out of 478927
+ 391694 string characters out of 2864781
+ 814568 words of memory out of 3000000
+ 38764 multiletter control sequences out of 15000+600000
+ 490170 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,13n,81p,1351b,941s stack positions out of 5000i,500n,10000p,200000b,80000s
 {G:/Programs/miktex/fonts/enc/dvips/lm/lm-ts1.enc}{G:/Programs/miktex/fonts/e
@@ -1437,9 +1444,9 @@ c/lm/lmssbx10.pfb><G:/Programs/miktex/fonts/type1/public/lm/lmsy10.pfb><G:/Prog
 rams/miktex/fonts/type1/public/lm/lmsy5.pfb><G:/Programs/miktex/fonts/type1/pub
 lic/lm/lmsy6.pfb><G:/Programs/miktex/fonts/type1/public/lm/lmsy7.pfb><G:/Progra
 ms/miktex/fonts/type1/public/lm/lmsy8.pfb>
-Output written on e344_A1_report.pdf (54 pages, 12826873 bytes).
+Output written on e344_A1_report.pdf (55 pages, 12831833 bytes).
 PDF statistics:
- 1314 PDF objects out of 1440 (max. 8388607)
- 226 named destinations out of 1000 (max. 500000)
- 51900 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1332 PDF objects out of 1440 (max. 8388607)
+ 229 named destinations out of 1000 (max. 500000)
+ 51908 words of extra memory for PDF output out of 61914 (max. 10000000)
 

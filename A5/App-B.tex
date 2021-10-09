@@ -191,3 +191,47 @@ If eq.\ref{eq:rm} is substituted into eq. \ref{eq:rx} $R_n$ can be solved for:
 $R_n$=23.22k\textohm (lab resistor of 22k\textohm) \\
 $R_m$=48k\textohm (lab resistor of 47k\textohm)
 
+
+\chapter{Load control and pilot LED op amp voltages}
+
+\label{appen:opamp}
+
+
+\begin{table}[!htb]
+	\centering
+	\footnotesize
+	\caption[Load Control circuit op amp requirements]{Load control and pilot LED circuit op amp requirements \cite{MCP}}
+	\begin{tabular}{lrrrr}
+		\toprule
+		& $Min$ &$Max$&$Designed$ $range / value$\\
+		&[V]&[V]&[V]\\
+		\midrule
+		All op amps Difference between supply rails $V_{DD} - V_{SS}$ & -& 7  &5   \\
+		
+		U1 Common mode voltage $(\frac{V_+ + V_-}{2}-V_{SS})$ &  -0.3&5.3&1.45-3\\
+		U1 Differential Voltage $ (|V_+ - V_-|)$ & -& 5& 1-2.1  \\
+		U1 Input voltages to $V_-$ and $V_+$  &  -1    &6&0.4-3.5 \\
+		
+		U2 Common mode voltage $(\frac{V_+ + V_-}{2}-V_{SS})$ &  -0.3&5.3&0-5\\
+		U2 Input voltages to $V_-$ and $V_+$ &  -1    &6& 0-5 \\
+		
+		
+		U3 Common mode voltage $(\frac{V_+ + V_-}{2}-V_{SS})$ &  -0.3&5.3&1.27-3.67\\
+		U3 Input voltages to $V_-$ and $V_+$  &  -1    &6&0.03-4.85 \\
+		U3 Differential Voltage $ (|V_+ - V_-|)$ & -& 5&  1-2.47  \\
+		
+		
+		U4 Common mode voltage $(\frac{V_+ + V_-}{2}-V_{SS})$ &  -0.3&5.3&2.5-4.5\\
+		U4 Input voltages to $V_-$ and $V_+$  &  -1    &6&0-4.5 \\
+		U4 Differential Voltage $ (|V_+ - V_-|)$ & -& 5&  2.5-4.5  \\
+		
+		U5 Common mode voltage $(\frac{V_+ + V_-}{2}-V_{SS})$ &  -0.3&5.3&0.01-2.92\\
+		U5 Input voltages to $V_-$ and $V_+$ &  -1    &6& 0.03-4.85 \\
+		
+		\bottomrule
+	\end{tabular}
+	\label{tab:MCPbat}
+\end{table}
+
+All op amps are within boundaries.
+
