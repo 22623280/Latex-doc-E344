@@ -38,20 +38,21 @@
 \contentsline {figure}{\numberline {4.11}{\ignorespaces LTSPICE battery measurement simulation results}}{29}{figure.caption.47}%
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Oscilloscope data of rise time of battery voltage measuring circuit\relax }}{29}{figure.caption.48}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces LTSPICE LDR graphed simulation results\relax }}{30}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces LTSPICE Load Control results}}{31}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces LTSPICE Digital light condition results\relax }}{30}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces LTSPICE Load Control results}}{31}{figure.caption.53}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Rise Time for different switches }}{33}{figure.caption.55}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Circuit with barcode and Student Card\relax }}{34}{figure.caption.56}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Rise Time for different switches }}{33}{figure.caption.57}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Circuit with barcode and Student Card\relax }}{34}{figure.caption.58}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces tsc213 data sheet information\relax }}{39}{figure.caption.59}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Application Circuit For LM317}}{39}{figure.caption.60}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces tsc213 data sheet information\relax }}{39}{figure.caption.61}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Application Circuit For LM317}}{39}{figure.caption.62}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Non inverting Schmidt trigger}}{40}{figure.caption.62}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Non inverting Schmidt trigger}}{40}{figure.caption.64}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Differential amplifier op amp setup}}{42}{figure.caption.63}%
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Differential amplifier op amp setup derivation}}{42}{figure.caption.64}%
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Differential amplifier op amp setup}}{42}{figure.caption.65}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Differential amplifier op amp setup derivation}}{42}{figure.caption.66}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces $V_-$ pilot LED calculations \relax }}{43}{figure.caption.65}%
-\contentsline {figure}{\numberline {E.2}{\ignorespaces $V_-$ pilot LED calculations with load control on \relax }}{43}{figure.caption.66}%
-\contentsline {figure}{\numberline {E.3}{\ignorespaces $V_-$ pilot LED calculations with load control off \relax }}{44}{figure.caption.67}%
+\contentsline {figure}{\numberline {E.1}{\ignorespaces $V_-$ pilot LED calculations \relax }}{43}{figure.caption.67}%
+\contentsline {figure}{\numberline {E.2}{\ignorespaces $V_-$ pilot LED calculations with load control on \relax }}{43}{figure.caption.68}%
+\contentsline {figure}{\numberline {E.3}{\ignorespaces $V_-$ pilot LED calculations with load control off \relax }}{44}{figure.caption.69}%

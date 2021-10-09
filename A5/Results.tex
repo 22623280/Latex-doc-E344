@@ -417,7 +417,16 @@ From figure \ref{fig:batrise} it can be seen that the rise time of channel 1 (AD
 
 To get the large range of measurements in table \ref{tab:LDR} a phone with five different torch brightness settings is held above the LDR and the ADC voltage is measured. Initially at "torch level 1" a box is placed over the LDR and the box is elevated in increments.  Then the box is removed and the torch brightness is increased. The simulated results do achieve a larger range than the practical results. This may be because exact conditions for "darkness" and "light" in the measurements were not achieved.
  
- \section{LED Load control}
+ \section{Load and pilot LED control}
+ 
+ 
+ \begin{figure}[!htb]
+ 	\centering
+ 	\includegraphics[scale=0.48]{./Figures/A7/A72digitallight.png}
+ 	\caption{LTSPICE Digital light condition results}
+ 	\label{fig:A7digital}
+ \end{figure}
+ 
  
  \begin{table}[!htb]
  	\centering
@@ -439,10 +448,14 @@ To get the large range of measurements in table \ref{tab:LDR} a phone with five 
 
 
 
+From figure \ref{fig:A7digital} it can be seen that as the analogue LDR signal goes above and below the annotated thresholds, an digital signal is produced that represents whether it is light or dark. This is correct however both the measured thresholds are different to what is expected as can be seen from table \ref{tab:hyst meas_light}. This is likely due to the resistors chosen to match lab resistors for the simulation, and resistor tolerances for the practical circuit.
+
+
+
 \begin{figure}[!htb]
 	\footnotesize
 	\centering
-	\begin{subfigure}[]{0.386\textwidth}
+	\begin{subfigure}[]{0.46\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{./Figures/A7/A72loadcontsim.png}
 		\caption{} \label{subfig:A7voltages}
@@ -455,4 +468,33 @@ To get the large range of measurements in table \ref{tab:LDR} a phone with five 
 	\caption[{LTSPICE Load Control results}]{LTSPICE Load Control results   (a)  Voltages relevant to load control (b)Current through load }
 	\label{fig:loadcontA7}
 \end{figure}
+
+In figure \ref{fig:loadcontA7} the current flow indicates when the load LED is on (magnitude unimportant) . It should only be on when it is dark and when either the beetle load control or the momentary switch is high. From the current graph in figure \ref{subfig:A7current} it can be seen that current flows at two intervals, and when looming at figure \ref{subfig:A7voltages}, it happens at the same time that both the load control (this includes both the beetle and switch) and the light condition are high as expected.
+The pilot LED should only be on when it is dark and the load control is off (both momentary and beetle). In figure \ref{subfig:A7current} this happens when both the momentary switch and the load control voltage is off and light condition is on. This means it is working as expected.
+
+
+\begin{table}[!htb]
+	\centering
+	\footnotesize
+	\caption{Measured Voltages for Load control and pilot LED}
+	\begin{tabular}{lrrrr}
+		\toprule
+		$PWM$&$Momentary Switch $&$Light Condition$&$Load$&$Pilot LED$&\\
+				&[V]&[V]&[V]&[V]&[V]\\
+		\midrule
+		4.97&0&0&0&0\\
+		4.97&0&4.95&0&1.91\\
+		4.97&4.95&0&0&0\\
+		4.97&4.95&4.95&6.03&0\\
+		\bottomrule
+	\end{tabular}
+	\label{tab:truthtabmeas}
+\end{table}
+
+The above table \ref{tab:truthtabmeas} was taken to indicate that the truth table in the design section corresponds to the practical circuit. The Momentary switch and the "light condition" were controlled manually. The tables do correspond indicating that the design worked as indicated. 
+One thing that must be taken into consideration is that when the load was being powered a voltage of 0.38V was measured across the three NMOS's at the load, this is a significant voltage.
+
+
+
+
 

@@ -28,7 +28,7 @@
 \contentsline {section}{\numberline {3.7}Supply voltage measurement}{16}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Battery voltage measurement}{17}{section.3.8}%
 \contentsline {section}{\numberline {3.9}Ambient light sensor}{19}{section.3.9}%
-\contentsline {section}{\numberline {3.10}LED load control}{19}{section.3.10}%
+\contentsline {section}{\numberline {3.10}Load and pilot LED control}{19}{section.3.10}%
 \contentsline {subsection}{\numberline {3.10.1}Pilot light control design}{20}{subsection.3.10.1}%
 \contentsline {chapter}{\numberline {4}Subsystem results}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Voltage regulation}{21}{section.4.1}%
@@ -39,9 +39,9 @@
 \contentsline {section}{\numberline {4.6}Supply Voltage measurement}{28}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Battery Voltage measurement}{29}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Ambient light sensor circuitry}{30}{section.4.8}%
-\contentsline {section}{\numberline {4.9}LED Load control}{30}{section.4.9}%
+\contentsline {section}{\numberline {4.9}Load and pilot LED control}{30}{section.4.9}%
 \contentsline {chapter}{\numberline {5}System results}{32}{chapter.5}%
-\contentsline {chapter}{Bibliography}{35}{chapter*.57}%
+\contentsline {chapter}{Bibliography}{35}{chapter*.59}%
 \contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{38}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Data sheet info}{39}{appendix.B}%
 \contentsline {chapter}{\numberline {C}Hysterisis Calculations}{40}{appendix.C}%

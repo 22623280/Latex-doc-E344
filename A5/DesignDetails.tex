@@ -443,7 +443,7 @@ The LDR will be used to produce a voltage that will fall within the boundary of 
 	\label{fig:LDR}
 \end{figure}
 
-\section{LED load control}
+\section{Load and pilot LED control}
 
 The following design will consist will achieve the output of the Load LED and pilot LED that can be seen in table \ref{tab:truthtab}.
  This consists of defining a "dark" and "light" point for the LDR in the previous section. This is implemented with non inverting Schmidt trigger. The hysteresis band is designed to be 0.2V around the centre voltage of 2.5V defined in the previous section ($V_{TU}$=2.6V ,$V_{TL}$=2.4V ).When it is dark enough the voltage across the LDR will be greater than 2.6V and the trigger will output five volts. \textbf{The following equations are derived extensively alongside the used circuit in Appendix C}.
