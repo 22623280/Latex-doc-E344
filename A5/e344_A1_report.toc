@@ -30,21 +30,22 @@
 \contentsline {section}{\numberline {3.9}Ambient light sensor}{19}{section.3.9}%
 \contentsline {section}{\numberline {3.10}Load and pilot LED control}{19}{section.3.10}%
 \contentsline {subsection}{\numberline {3.10.1}Pilot light control design}{20}{subsection.3.10.1}%
-\contentsline {chapter}{\numberline {4}Subsystem results}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Voltage regulation}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}High side switch on supply side}{23}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Undervoltage protection}{24}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Current sense}{25}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Low-side switch}{27}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Supply Voltage measurement}{28}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Battery Voltage measurement}{29}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Ambient light sensor circuitry}{30}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Load and pilot LED control}{30}{section.4.9}%
-\contentsline {chapter}{\numberline {5}System results}{32}{chapter.5}%
-\contentsline {chapter}{Bibliography}{35}{chapter*.59}%
-\contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{38}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Data sheet info}{39}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Hysterisis Calculations}{40}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Differential amplifier calculations}{42}{appendix.D}%
-\contentsline {chapter}{\numberline {E}Pilot LED calculations}{43}{appendix.E}%
-\contentsline {chapter}{\numberline {F}Load control and pilot LED op amp voltages}{45}{appendix.F}%
+\contentsline {section}{\numberline {3.11}Firmware}{21}{section.3.11}%
+\contentsline {chapter}{\numberline {4}Subsystem results}{22}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Voltage regulation}{22}{section.4.1}%
+\contentsline {section}{\numberline {4.2}High side switch on supply side}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Undervoltage protection}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Current sense}{26}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Low-side switch}{28}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Supply Voltage measurement}{29}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Battery Voltage measurement}{30}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Ambient light sensor circuitry}{31}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Load and pilot LED control}{31}{section.4.9}%
+\contentsline {chapter}{\numberline {5}System results}{33}{chapter.5}%
+\contentsline {chapter}{Bibliography}{36}{chapter*.60}%
+\contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{39}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data sheet info}{40}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Hysterisis Calculations}{41}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Differential amplifier calculations}{43}{appendix.D}%
+\contentsline {chapter}{\numberline {E}Pilot LED calculations}{44}{appendix.E}%
+\contentsline {chapter}{\numberline {F}Load control and pilot LED op amp voltages}{46}{appendix.F}%

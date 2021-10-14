@@ -24,36 +24,37 @@
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Light measuring circuit\relax }}{19}{figure.caption.28}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Light condition and Load Control circuit\relax }}{20}{figure.caption.29}%
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Pilot LED circuit\relax }}{20}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Firmware flow diagram\relax }}{21}{figure.caption.32}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces LTSPICE switch turning on results}}{21}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces LTSPICE switch turning off results}}{21}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces LTSPICE switch off and supply off results}}{22}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces LTSPICE simulation results for high side switch on the supply side\relax }}{23}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces LTSPICE Under voltage circuit results}}{24}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Current Sense LTSpice Results}}{25}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces NMOS final results}}{27}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Oscilloscope Measurements of NMOS while switching\relax }}{27}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces LTSPICE supply measurement simulation results}}{28}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Oscilloscope Measurements of response time and noise of Supply measuring}}{28}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces LTSPICE battery measurement simulation results}}{29}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Oscilloscope data of rise time of battery voltage measuring circuit\relax }}{29}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces LTSPICE LDR graphed simulation results\relax }}{30}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces LTSPICE Digital light condition results\relax }}{30}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces LTSPICE Load Control results}}{31}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces LTSPICE switch turning on results}}{22}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces LTSPICE switch turning off results}}{22}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces LTSPICE switch off and supply off results}}{23}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces LTSPICE simulation results for high side switch on the supply side\relax }}{24}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces LTSPICE Under voltage circuit results}}{25}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Current Sense LTSpice Results}}{26}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces NMOS final results}}{28}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Oscilloscope Measurements of NMOS while switching\relax }}{28}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces LTSPICE supply measurement simulation results}}{29}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Oscilloscope Measurements of response time and noise of Supply measuring}}{29}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces LTSPICE battery measurement simulation results}}{30}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Oscilloscope data of rise time of battery voltage measuring circuit\relax }}{30}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces LTSPICE LDR graphed simulation results\relax }}{31}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces LTSPICE Digital light condition results\relax }}{31}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces LTSPICE Load Control results}}{32}{figure.caption.54}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Rise Time for different switches }}{33}{figure.caption.57}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Circuit with barcode and Student Card\relax }}{34}{figure.caption.58}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Rise Time for different switches }}{34}{figure.caption.58}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Circuit with barcode and Student Card\relax }}{35}{figure.caption.59}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces tsc213 data sheet information\relax }}{39}{figure.caption.61}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Application Circuit For LM317}}{39}{figure.caption.62}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces tsc213 data sheet information\relax }}{40}{figure.caption.62}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Application Circuit For LM317}}{40}{figure.caption.63}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Non inverting Schmidt trigger}}{40}{figure.caption.64}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Non inverting Schmidt trigger}}{41}{figure.caption.65}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Differential amplifier op amp setup}}{42}{figure.caption.65}%
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Differential amplifier op amp setup derivation}}{42}{figure.caption.66}%
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Differential amplifier op amp setup}}{43}{figure.caption.66}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Differential amplifier op amp setup derivation}}{43}{figure.caption.67}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces $V_-$ pilot LED calculations \relax }}{43}{figure.caption.67}%
-\contentsline {figure}{\numberline {E.2}{\ignorespaces $V_-$ pilot LED calculations with load control on \relax }}{43}{figure.caption.68}%
-\contentsline {figure}{\numberline {E.3}{\ignorespaces $V_-$ pilot LED calculations with load control off \relax }}{44}{figure.caption.69}%
+\contentsline {figure}{\numberline {E.1}{\ignorespaces $V_-$ pilot LED calculations \relax }}{44}{figure.caption.68}%
+\contentsline {figure}{\numberline {E.2}{\ignorespaces $V_-$ pilot LED calculations with load control on \relax }}{44}{figure.caption.69}%
+\contentsline {figure}{\numberline {E.3}{\ignorespaces $V_-$ pilot LED calculations with load control off \relax }}{45}{figure.caption.70}%
 \addvspace {10\p@ }
