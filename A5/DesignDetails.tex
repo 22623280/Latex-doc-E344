@@ -478,7 +478,7 @@ To achieve the one \textbf{on} condition for the load LED in table \ref{tab:trut
 		\toprule
 		$PWM$&$beetle \ load  \ Control$&$Light Condition$&$Load LED$&$Pilot LED$\\
 		
-		&[0-off/1-on]&[0-Light/1-Dark]&[0-off/1-on]&[0-off/1-on]&[0-off/1-on]\\
+	&[0-off/1-on]&[0-Light/1-Dark]&[0-off/1-on]&[0-off/1-on]&[0-off/1-on]\\
 		\midrule
 		1&0&0&0&0\\
 		1&0&1&0&1\\
@@ -508,10 +508,65 @@ This circuit will drive a current limited red LED with an op amp in the case tha
 
 
 \section{Firmware}
+\subsection{Code flow}
+In arduino's "version" of C there are two main structural components to the code. The void setup and the void loop. In the setup the necessary initialisations are done such as the setup of the serial communication and required output pins. The loop runs over and over again as the name implies. The implemented code inside this loop includes Reading in ADC analogue values and then converting \& calibrating those values to their practical values. After this step the necessary steps are taken to read in strings from the serial input. When reading strings from serial each character is received individually. A while loop is used to append each character to a single string. Depending on the received string the over charge control will be changed. All calibrated values and the status of the charging is then printed to serial, then there is a second delay after which the loop is repeated again.
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Figures/A8/flowfirmware.png}
+	\includegraphics[width=0.6\linewidth]{Figures/A8/flowfirmware.png}
 	\caption{Firmware flow diagram}
 	\label{fig:flow}
 \end{figure}
+
+\subsection{Calibration of ADC}
+Using eq.\ref{eq:adc} the ADC values are converted to the input voltages at the ADC. Then this value is used uniquely for each adc measurement to get the representative value.
+
+\begin{equation}
+		V_{in}=(\frac{5V\times ADC_{val} }{1023})	
+			\label{eq:adc}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+\begin{wrapfigure}{l}{0.45\textwidth}
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{./Figures/A8/batteryA8.png}
+	\end{center}
+	\caption{Battery ADC calibration}
+	\label{fig:A8bat}
+\end{wrapfigure}
+Using the below equation the ADC is calibrated to be the same as the measured values. $V_{adcHMeas}$ and $V_{adcLMeas}$ are voltages measured at the input to the adc when the battery voltage is at its min an max value. $V_{batADC}$ is the calculated input voltage that the arduino beetle is receiving.\newline
+$V_{Bat}=(V_{adcBat}-V_{adcMax})\times \frac{(V_{batMax}-V_{batMin})}{(V_{adcHMeas}-V_{adcLMeas})}+V_{batMax}$. In figure \ref{fig:A8bat} the data from the beetle is shown in comparison to multimeter measurements and it can be said that the calibration equation worked very well.
+
+
+
+\begin{wrapfigure}{l}{0.45\textwidth}
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{./Figures/A8/supplyA8.png}
+	\end{center}
+	\caption{Supply ADC calibration}
+	\label{fig:A8sup}
+\end{wrapfigure}
+
+The supply voltage starts at zero and reaches a maximum, this makes it easier to calibrate because a singel measurement close to the maximum can be taken to determine the ratio of the adc input voltage to the actual supply voltage as can be seen in the following equation.
+
+$V_{Supply} = V_{supplyADC} \times \frac{V_{measuredSup}}{V_{measuredADCSup}}$. Once again in figure \ref{fig:A8sup} it can be seen that the multimeter measurements very closely resemble the calibrated ADC values.
+
+
+\begin{wrapfigure}{l}{0.45\textwidth}
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{./Figures/A8/currentA8.png}
+	\end{center}
+	\caption{Current ADC calibration}
+	\label{fig:A8curr}
+\end{wrapfigure}
+
+To calibrate the current to the correct value the value of $R_{shunt}$ was first determined from calculations. This was done by rearranging equation \ref{eq:refeq}. To do this the output voltage of 1.322V was measured as well as the discharge current of 85mA. An additional calibration point is the $V_{ref}$ value that is also measured. From figure \ref{fig:A8curr} it can be confirmed that the calibrated values are very close to the multimeter measurements.
+
