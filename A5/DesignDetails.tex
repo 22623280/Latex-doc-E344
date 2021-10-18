@@ -478,7 +478,7 @@ To achieve the one \textbf{on} condition for the load LED in table \ref{tab:trut
 		\toprule
 		$PWM$&$beetle \ load  \ Control$&$Light Condition$&$Load LED$&$Pilot LED$\\
 		
-	&[0-off/1-on]&[0-Light/1-Dark]&[0-off/1-on]&[0-off/1-on]&[0-off/1-on]\\
+ 	&[0-off/1-on]&[0-Light/1-Dark]&[0-off/1-on]&[0-off/1-on]&[0-off/1-on]\\
 		\midrule
 		1&0&0&0&0\\
 		1&0&1&0&1\\
@@ -519,7 +519,7 @@ In arduino's "version" of C there are two main structural components to the code
 \end{figure}
 
 \subsection{Calibration of ADC}
-Using $V_{in}=(\frac{5V\times ADC_{val} }{1023})$ the ADC values are converted to the input voltages at the ADC. Then this value is used uniquely for each adc measurement to get the representative value. All the methods of calibration are linearly done.
+Using $V_{in}=(\frac{5V\times ADC_{val} }{1023})$ the ADC values are converted to the input voltages at the ADC. Then this value is used uniquely for each adc measurement to get the representative value. All the methods of calibration are linearly done. The measured \textbf{calibration points} for all adc calibrations can all be see in the respective figures.
 
 
 
@@ -533,8 +533,8 @@ Using $V_{in}=(\frac{5V\times ADC_{val} }{1023})$ the ADC values are converted t
 	\caption{Battery ADC calibration}
 	\label{fig:A8bat}
 \end{wrapfigure}
-Using the below equation the ADC is calibrated to be the same as the measured values. $V_{adcHMeas}$ and $V_{adcLMeas}$ are voltages measured at the input to the adc when the battery voltage is at its min an max value. $V_{batADC}$ is the calculated input voltage that the arduino beetle is receiving.\newline
-$V_{Bat}=(V_{adcBat}-V_{adcMax})\times \frac{(V_{batMax}-V_{batMin})}{(V_{adcHMeas}-V_{adcLMeas})}+V_{batMax}$.The calibration points used can be seen in the annotations of figure \ref{fig:A8bat}. In figure \ref{fig:A8bat} the data from the beetle is shown in comparison to multimeter measurements and it can be said that the calibration equation worked very well.
+Using the below equation the \textbf{battery ADC} is calibrated to be the same as the measured values. The equation is the line equation $y-y_1=(\frac{y_1-y_0}{x_1-x_0})\times x$. \newline
+$V_{Bat}=(V_{adcBat}-V_{adcMax})\times \frac{(V_{batMax}-V_{batMin})}{(V_{adcHMeas}-V_{adcLMeas})}+V_{batMax}$. $V_{adcHMeas}$ and $V_{adcLMeas}$ are voltages measured at the battery adc input when the battery voltage is at its min an max value. $V_{batADC}$ is the calculated input voltage that the arduino beetle is receiving. In figure \ref{fig:A8bat} the data from the beetle is shown in comparison to multimeter measurements and it can be said that the calibration equation worked.
 
 
 
@@ -546,10 +546,9 @@ $V_{Bat}=(V_{adcBat}-V_{adcMax})\times \frac{(V_{batMax}-V_{batMin})}{(V_{adcHMe
 	\label{fig:A8sup}
 \end{wrapfigure}
 
-The supply voltage starts at zero and reaches a maximum, this makes it easier to calibrate because a single measurement close to the maximum can be taken to determine the ratio of the adc input voltage to the actual supply voltage as can be seen in the following equation.
-
-$V_{Supply} = V_{supplyADC} \times \frac{V_{measuredSup}}{V_{measuredADCSup}}$. The measured calibration point was at a adc voltage of 4.85V corresponding to 23.08V at the supply. Once again in figure \ref{fig:A8sup} it can be seen that the multimeter measurements very closely resemble the calibrated ADC values.
-
+The \textbf{supply voltage} starts at zero and reaches a maximum, a single measurement close to the maximum can be taken to determine the ratio of the adc input voltage to the actual supply voltage as can be seen in the following equation.
+$V_{Supply} = V_{adcSupply} \times \frac{V_{measuredSup}}{V_{measuredADCSup}}$. Once again in figure \ref{fig:A8sup} it can be seen that the multimeter measurements very closely resembles the calibrated ADC values.
+To calibrate the \textbf{current} to the correct value the value of $R_{shunt}$ was first determined from calculations. This was done by rearranging equation \ref{eq:refeq} to $R_{shunt}= \frac{(adcCurr-Vref)}{(50*currMeas)}$ where $V_{ref}$ is 1.753V and adcCurr and currMeas is 1.322V and -85mA. 
 
 \begin{wrapfigure}{l}{0.38\textwidth}
 	\begin{center}
@@ -558,7 +557,6 @@ $V_{Supply} = V_{supplyADC} \times \frac{V_{measuredSup}}{V_{measuredADCSup}}$. 
 	\caption{Current ADC calibration}
 	\label{fig:A8curr}
 \end{wrapfigure}
+The final equation used was  $Current = \frac{adcCurr-V_{ref}}{50*Rshunt}\times 1000$. From figure \ref{fig:A8curr} it can be confirmed that the calibrated values are very close to the multimeter measurements. 
 
-To calibrate the current to the correct value the value of $R_{shunt}$ was first determined from calculations. This was done by rearranging equation \ref{eq:refeq} to $R_{shunt}= \frac{(adcCurr-Vref)}{(50*currMeas)}$. To do this the output voltage of 1.322V was measured as well as the discharge current of 85mA. An additional calibration point is the $V_{ref}$ value that is also measured. From figure \ref{fig:A8curr} it can be confirmed that the calibrated values are very close to the multimeter measurements.
-
-The LDR value read does not need to specific final output only 100 at its maximum brightest and 0 at its darkest. To achieve this the ADC value was divided by 10 and subtracted from 110. $light_{out}=110-ADC_{light}/10$.
+The \textbf{LDR} value read does not need to be a specific output only 100 at its maximum brightness and 0 at its darkest. To achieve this the ADC value was divided by 10 and subtracted from 100. $light_{out}=100-ADC_{light}/10$. When the LDR is at its darkest (ADC measured just below 1000) it will be close to 0, and when it is at its brightest a value close to 100 will be achieved.
