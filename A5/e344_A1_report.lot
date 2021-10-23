@@ -7,23 +7,25 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces Battery voltage measurement circuit op amp requirements}}{18}{table.caption.27}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces Truth table of pilot \& load control}}{20}{table.caption.30}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Measured Values\relax }}{24}{table.caption.39}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Highside switch measurements\relax }}{25}{table.caption.41}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Under voltage circuit measurements\relax }}{26}{table.caption.43}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Voltage across resistors when LEDs are on\relax }}{27}{table.caption.45}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Measured results compared to actual results\relax }}{27}{table.caption.46}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Battery Measuring circuit measurements\relax }}{31}{table.caption.53}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces LDR ADC measured results\relax }}{32}{figure.caption.54}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Hysteresis Measurement of light condition circuit\relax }}{32}{table.caption.56}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Measured Voltages for Load control and pilot LED\relax }}{33}{table.caption.58}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Measured Values\relax }}{22}{table.caption.35}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Highside switch measurements\relax }}{23}{table.caption.37}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Under voltage circuit measurements\relax }}{24}{table.caption.39}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Voltage across resistors when LEDs are on\relax }}{25}{table.caption.41}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Measured results compared to actual results\relax }}{25}{table.caption.42}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Battery Measuring circuit measurements\relax }}{29}{table.caption.49}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces LDR ADC measured results\relax }}{30}{figure.caption.50}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Hysteresis Measurement of light condition circuit\relax }}{30}{table.caption.52}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Measured Voltages for Load control and pilot LED\relax }}{31}{table.caption.54}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Charging circuit measurements\relax }}{34}{table.caption.59}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Hysteresis Measurement\relax }}{34}{table.caption.60}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Thermal Resistance Values}}{41}{table.caption.67}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Charging circuit measurements\relax }}{32}{table.caption.55}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Hysteresis Measurement\relax }}{32}{table.caption.56}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {F.1}{\ignorespaces Load Control circuit op amp requirements}}{47}{table.caption.74}%
+\contentsline {table}{\numberline {B.1}{\ignorespaces Thermal Resistance Values}}{44}{table.caption.69}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {F.1}{\ignorespaces Load Control circuit op amp requirements}}{50}{table.caption.76}%
