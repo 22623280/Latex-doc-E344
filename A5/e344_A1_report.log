@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.30)  23 OCT 2021 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.30)  24 OCT 2021 19:19
 entering extended mode
 **./e344_A1_report.tex
 (e344_A1_report.tex
@@ -649,9 +649,6 @@ LaTeX Warning: Label `fig:two' multiply defined.
 LaTeX Warning: Label `fig:A6bat' multiply defined.
 
 ) (SystemResults.aux) (Firmware.aux) (PCSoftware.aux
-
-LaTeX Warning: Label `fig:flow' multiply defined.
-
 
 LaTeX Warning: Label `fig:flow' multiply defined.
 
@@ -1368,22 +1365,23 @@ rrentA8.png>]
 
  (PCSoftware.tex
 Chapter 7.
-<Figures/A9/A9.png, id=1110, 575.2692pt x 743.6583pt>
+<Figures/A9/A9.png, id=1111, 575.2692pt x 664.1613pt>
 File: Figures/A9/A9.png Graphic file (type png)
 <use Figures/A9/A9.png>
 Package pdftex.def Info: Figures/A9/A9.png  used on input line 6.
-(pdftex.def)             Requested size: 344.78862pt x 445.72183pt.
-<Figures/A9/GUI.png, id=1111, 791.20593pt x 513.41812pt>
+(pdftex.def)             Requested size: 377.85419pt x 436.25002pt.
+[37
+
+
+
+
+ <./Figures/A9/A9.png>]
+<Figures/A9/GUI.png, id=1117, 791.20593pt x 513.41812pt>
 File: Figures/A9/GUI.png Graphic file (type png)
 <use Figures/A9/GUI.png>
-Package pdftex.def Info: Figures/A9/GUI.png  used on input line 22.
+Package pdftex.def Info: Figures/A9/GUI.png  used on input line 52.
 (pdftex.def)             Requested size: 472.31595pt x 306.49425pt.
-) [37
-
-
-
-
-] [38 <./Figures/A9/A9.png>] [39 <./Figures/A9/GUI.png>]
+) [38] [39 <./Figures/A9/GUI.png>]
 (e344_A1_report.bbl
 Underfull \hbox (badness 1803) in paragraph at lines 84--88
 []\OT1/lmr/m/n/12 (+20) Freiberg In-stru-ments, ``Mi-nor-ity car-rier life-time
@@ -1399,11 +1397,11 @@ Underfull \hbox (badness 1803) in paragraph at lines 84--88
 
  (App-A.tex
 Appendix A.
-<./Figures/gitHub.png, id=1195, 936.49875pt x 342.5297pt>
+<./Figures/gitHub.png, id=1196, 947.03813pt x 346.29375pt>
 File: ./Figures/gitHub.png Graphic file (type png)
 <use ./Figures/gitHub.png>
 Package pdftex.def Info: ./Figures/gitHub.png  used on input line 8.
-(pdftex.def)             Requested size: 472.31595pt x 172.754pt.
+(pdftex.def)             Requested size: 472.31595pt x 172.70258pt.
 
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 8--10
  [][] 
@@ -1417,12 +1415,12 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 8--10
 
  (App-B.tex
 Appendix B.
-<./Figures/datasheet.png, id=1202, 640.64343pt x 510.40688pt>
+<./Figures/datasheet.png, id=1203, 640.64343pt x 510.40688pt>
 File: ./Figures/datasheet.png Graphic file (type png)
 <use ./Figures/datasheet.png>
 Package pdftex.def Info: ./Figures/datasheet.png  used on input line 5.
 (pdftex.def)             Requested size: 320.32092pt x 255.2028pt.
-<Figures/circuitSTM.png, id=1203, 483.8075pt x 242.9075pt>
+<Figures/circuitSTM.png, id=1204, 483.8075pt x 242.9075pt>
 File: Figures/circuitSTM.png Graphic file (type png)
 <use Figures/circuitSTM.png>
 Package pdftex.def Info: Figures/circuitSTM.png  used on input line 13.
@@ -1446,7 +1444,7 @@ File: Figures/A6/difamp.jpg Graphic file (type jpg)
 <use Figures/A6/difamp.jpg>
 Package pdftex.def Info: Figures/A6/difamp.jpg  used on input line 121.
 (pdftex.def)             Requested size: 188.9235pt x 123.93472pt.
-<Figures/A6/derive.png, id=1252, 364.36125pt x 480.29437pt>
+<Figures/A6/derive.png, id=1253, 364.36125pt x 480.29437pt>
 File: Figures/A6/derive.png Graphic file (type png)
 <use Figures/A6/derive.png>
 Package pdftex.def Info: Figures/A6/derive.png  used on input line 128.
@@ -1455,19 +1453,19 @@ Package pdftex.def Info: Figures/A6/derive.png  used on input line 128.
 
  <./Figures/A6/derive.png>]
 Appendix E.
-<Figures/A7/V-main.png, id=1261, 280.79906pt x 168.63pt>
+<Figures/A7/V-main.png, id=1262, 280.79906pt x 168.63pt>
 File: Figures/A7/V-main.png Graphic file (type png)
 <use Figures/A7/V-main.png>
 Package pdftex.def Info: Figures/A7/V-main.png  used on input line 145.
 (pdftex.def)             Requested size: 94.46175pt x 56.72618pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 146.
-<Figures/A7/5Vv-.png, id=1262, 190.46156pt x 216.05719pt>
+<Figures/A7/5Vv-.png, id=1263, 190.46156pt x 216.05719pt>
 File: Figures/A7/5Vv-.png Graphic file (type png)
 <use Figures/A7/5Vv-.png>
 Package pdftex.def Info: Figures/A7/5Vv-.png  used on input line 162.
 (pdftex.def)             Requested size: 94.46175pt x 107.15466pt.
-<Figures/A7/0Vv-.png, id=1263, 156.585pt x 231.86626pt>
+<Figures/A7/0Vv-.png, id=1264, 156.585pt x 231.86626pt>
 File: Figures/A7/0Vv-.png Graphic file (type png)
 <use Figures/A7/0Vv-.png>
 Package pdftex.def Info: Figures/A7/0Vv-.png  used on input line 181.
@@ -1497,11 +1495,11 @@ Package rerunfilecheck Info: File `e344_A1_report.out' has not changed.
 (rerunfilecheck)             Checksum: BC2A7A8B4E3372AA2029AD8511324C9D;9234.
  ) 
 Here is how much of TeX's memory you used:
- 21966 strings out of 478927
- 393952 string characters out of 2864781
- 816974 words of memory out of 3000000
- 38824 multiletter control sequences out of 15000+600000
- 490531 words of font info for 207 fonts, out of 8000000 for 9000
+ 21971 strings out of 478927
+ 394007 string characters out of 2864781
+ 817033 words of memory out of 3000000
+ 38825 multiletter control sequences out of 15000+600000
+ 490715 words of font info for 209 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,13n,81p,1351b,941s stack positions out of 5000i,500n,10000p,200000b,80000s
 {G:/Programs/miktex/fonts/enc/dvips/lm/lm-ts1.enc}{G:/Programs/miktex/fonts/e
@@ -1521,9 +1519,9 @@ c/lm/lmssbx10.pfb><G:/Programs/miktex/fonts/type1/public/lm/lmsy10.pfb><G:/Prog
 rams/miktex/fonts/type1/public/lm/lmsy5.pfb><G:/Programs/miktex/fonts/type1/pub
 lic/lm/lmsy6.pfb><G:/Programs/miktex/fonts/type1/public/lm/lmsy7.pfb><G:/Progra
 ms/miktex/fonts/type1/public/lm/lmsy8.pfb>
-Output written on e344_A1_report.pdf (60 pages, 16306739 bytes).
+Output written on e344_A1_report.pdf (60 pages, 16252610 bytes).
 PDF statistics:
- 1438 PDF objects out of 1440 (max. 8388607)
+ 1439 PDF objects out of 1440 (max. 8388607)
  248 named destinations out of 1000 (max. 500000)
  52002 words of extra memory for PDF output out of 61914 (max. 10000000)
 

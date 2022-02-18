@@ -46,9 +46,9 @@
 \contentsline {subsection}{\numberline {6.0.2}Calibration of ADC}{36}{subsection.6.0.2}%
 \contentsline {chapter}{\numberline {7}PC Software}{37}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Software flow}{37}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Functions Overview}{37}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Functions inside loop}{37}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Button Functions}{37}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.2}Functions Overview}{38}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Functions inside loop}{38}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Button Functions}{38}{subsection.7.2.2}%
 \contentsline {chapter}{Bibliography}{40}{chapter*.65}%
 \contentsline {chapter}{\numberline {A}GitHub Activity Heatmap}{43}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Data sheet info}{44}{appendix.B}%
